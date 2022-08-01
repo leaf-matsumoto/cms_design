@@ -19,4 +19,11 @@ Route::group([
     // セット商品管理
     $router->resource('set-menus', SetMenuController::class);
 
+    // お知らせ管理
+    $router->resource('new-contents', NewContentController::class);
+
+    // オーダー管理
+    $router->resource('order-mgts', OrderMgtController::class);
+
+
 });

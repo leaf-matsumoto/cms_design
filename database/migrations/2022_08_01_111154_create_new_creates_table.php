@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('new_creates', function (Blueprint $table) {
             $table->id();//ID
             $table->string('theater_name')->nullable();//劇場コード
             $table->string('start_day')->nullable();//掲載開始日
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('news');
+        Schema::dropIfExists('new_creates');
     }
 };
