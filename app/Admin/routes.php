@@ -25,5 +25,15 @@ Route::group([
     // オーダー管理
     $router->resource('order-mgts', OrderMgtController::class);
 
+    // モバイルオーダーエラー
+    $router->resource('m-errors', MErrorController::class);
+
+    // セルフレジエラー
+    $router->resource('s-errors', SErrorController::class);
+
+    // マスタ同期
+    $router->resource('masters', MasterController::class);
+    $router->resource('master2s', Master2Controller::class);
+
 
 });

@@ -154,7 +154,6 @@ class SetMenuController extends AdminController
             $footer->disableCreatingCheck();
         });
 
-
         return $form;
     }
 }

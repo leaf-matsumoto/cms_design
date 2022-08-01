@@ -29,18 +29,34 @@
                             @endforeach
                         </div>
                     @endforeach
+
+                        <!-- マスター同期画面の条件分岐 -->
+                        @if(\Request::is('admin/masters/create'))
+                            @include('admin::add.master_connect')
+                        @endif
+
+                        <!-- マスター同期画面の条件分岐 -->
+                        @if(\Request::is('admin/master2s/create'))
+                            @include('admin::add.master2_connect')
+                        @endif
+
                 @endif
             </div>
         @endif
 
     </div>
+
     <!-- /.box-body -->
+    <!-- マスター同期画面の条件分岐(非表示) -->
+    @if(!\Request::is('admin/masters/create') && !\Request::is('admin/master2s/create'))
 
-    {!! $form->renderFooter() !!}
+        {!! $form->renderFooter() !!}
 
-    @foreach($form->getHiddenFields() as $field)
-        {!! $field->render() !!}
-    @endforeach
+        @foreach($form->getHiddenFields() as $field)
+            {!! $field->render() !!}
+        @endforeach
+
+    @endif
 
 <!-- /.box-footer -->
     {!! $form->close() !!}

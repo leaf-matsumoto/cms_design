@@ -4,7 +4,8 @@
 }
 
 /* 検索条件ボタン */
-.btn-dropbox {
+/* .btn-dropbox { */
+.btn-group {
   margin-top:10px;
 }
 
@@ -31,4 +32,20 @@ thead {
 tr {
     border-top: none !important;
     border-bottom: 1px solid #f4f4f4 !important;
+}
+
+
+/* マスタ同期ボタン */
+.btn-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.btn-chain {
+    width: 50%;
+}
+
+.chain-result {
+    margin-bottom: 30px;
 }
