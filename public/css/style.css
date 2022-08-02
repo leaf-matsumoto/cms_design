@@ -11,6 +11,7 @@
 
 .box-footer {
     border-top: none !important;
+    border-bottom: 1px solid #f4f4f4 !important;
 }
 
 /* フィルタ（検索）の下線非表示 */
@@ -48,4 +49,132 @@ tr {
 
 .chain-result {
     margin-bottom: 30px;
+}
+
+
+/* アレルギー用スタイル */
+/***　奈良カラー　***/
+
+    .allergy {
+        table-layout: fixed;
+    }
+
+
+    /* ヘッダー */
+    thead.allergy-title th {
+        background:#696969;
+        font-weight: bold;
+        color:#fff;
+        text-align: center;
+        padding: 10px 35px;
+        width: 100%
+    }
+
+    /* ボディ項目・フッター項目 */
+    .allergy tbody th
+    {
+        background:#FFF;
+        padding: 10px;
+    }
+
+    /* ボディデータ・フッターデータ */
+    .allergy tbody td,
+    .allergy tfoot td {
+        text-align:center;
+        padding: 10px;
+    }
+
+
+    /* 偶数行　１行ごとの色変えが不要なら削除 */
+    .allergy tr:nth-child(2n) th, 
+    .allergy tr:nth-child(2n) td {
+        background: #FBFBF6;
+    }
+
+    .allergy-add th {
+        padding: 30px!important;
+    }
+
+
+
+
+
+/* モーダルウィンドウ */
+    .modal-window {
+        display:none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 80%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        z-index: 11;
+        padding: 2rem;
+        overflow-y: auto;
+    /* overflow-y: scroll; */
+    }
+
+    /* モーダルウィンドウ02*/
+    .modal-window-02 {
+        display:none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+        height: 80%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        z-index: 12;
+        padding: 2rem;
+        overflow-y: auto;
+        /* overflow-y: scroll; */
+    }
+
+    /* 閉じるボタン */
+    .button-close {
+        left: 90%;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    
+
+    .p-img {
+        border: solid 1px #696969;
+        /* width: 100%; */
+        ;height: 100%;
+    }
+
+
+    /* モバイル販売管理のダイアログ */
+    input.dialog{
+        width: 120px;  
+    }
+
+
+
+/* フォームの最終項目だけ反映 */
+.form-group:last-child {
+    margin-bottom:0;
+}
+
+
+
+.explain {
+    margin-top:30px;
 }

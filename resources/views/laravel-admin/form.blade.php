@@ -27,7 +27,7 @@
                             @foreach($column->fields() as $field)
                                 {!! $field->render() !!}
                             @endforeach
-                        </div>
+                        <!-- </div> -->
                     @endforeach
 
                         <!-- マスター同期画面の条件分岐 -->
@@ -39,6 +39,18 @@
                         @if(\Request::is('admin/master2s/create'))
                             @include('admin::add.master2_connect')
                         @endif
+
+                        <!-- アレルギー一覧の条件分岐 -->
+                        @if(\Request::is('admin/allergies/create'))
+                            @include('admin::add.allergy')                           
+                        @endif
+
+                        <!-- おすすめ商品選択ダイアログの条件分岐 -->
+                        @if(\Request::is('admin/pickup/create'))
+                            @include('admin::add.pickup_table')
+                        @endif
+
+                        </div>
 
                 @endif
             </div>

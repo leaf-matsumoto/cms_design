@@ -2,20 +2,20 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\Master;
+use App\Models\Allergy;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 
-class MasterController extends AdminController
+class AllergyController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'マスタ同期管理';
+    protected $title = '食物アレルギー設定';
 
     /**
      * Make a grid builder.
@@ -24,11 +24,9 @@ class MasterController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new Master());
+        $grid = new Grid(new Allergy());
 
         $grid->column('id', __('Id'));
-        $grid->column('sample01', __('Sample01'));
-        $grid->column('sample02', __('Sample02'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -43,11 +41,9 @@ class MasterController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(Master::findOrFail($id));
+        $show = new Show(Allergy::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('sample01', __('Sample01'));
-        $show->field('sample02', __('Sample02'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -61,13 +57,11 @@ class MasterController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new Master());
+        $form = new Form(new Allergy());
 
-        // $form->text('sample01', __('Sample01'));
-        // $form->text('sample02', __('Sample02'));
-        $form->select('menu_class', '劇場選択')->options([
-            '選択してください' , 'フード' , 'ドリンク' , 'その他'
-        ]);
+        // テストフォーム ラベルとフィールドの幅を設定する
+        // $form->text('title', 'TEST02')->setWidth(5, 2);
+       
 
         $form->tools(function (Form\Tools $tools) {
             // 右上の表示ボタンを非表示

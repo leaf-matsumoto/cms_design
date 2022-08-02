@@ -54,6 +54,10 @@ class Master2Controller extends AdminController
     protected function form()
     {
         $form = new Form(new Master2());
+        
+            $form->select('menu_class', '劇場選択')->options([
+                '選択してください' , 'フード' , 'ドリンク' , 'その他'
+            ]);
 
             $form->footer(function ($footer) {
                 // 表示のチェックボックスを非表示

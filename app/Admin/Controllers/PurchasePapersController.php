@@ -2,20 +2,20 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\Master;
+use App\Models\PurchasePapers;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 
-class MasterController extends AdminController
+class PurchasePapersController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'マスタ同期管理';
+    protected $title = 'PurchasePapers';
 
     /**
      * Make a grid builder.
@@ -24,11 +24,11 @@ class MasterController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new Master());
+        $grid = new Grid(new PurchasePapers());
 
         $grid->column('id', __('Id'));
-        $grid->column('sample01', __('Sample01'));
-        $grid->column('sample02', __('Sample02'));
+        $grid->column('theater_name', __('Theater name'));
+        $grid->column('order_info', __('Order info'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -43,11 +43,11 @@ class MasterController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(Master::findOrFail($id));
+        $show = new Show(PurchasePapers::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('sample01', __('Sample01'));
-        $show->field('sample02', __('Sample02'));
+        $show->field('theater_name', __('Theater name'));
+        $show->field('order_info', __('Order info'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -61,13 +61,16 @@ class MasterController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new Master());
+        $form = new Form(new PurchasePapers());
 
-        // $form->text('sample01', __('Sample01'));
-        // $form->text('sample02', __('Sample02'));
-        $form->select('menu_class', '劇場選択')->options([
-            '選択してください' , 'フード' , 'ドリンク' , 'その他'
+        // $form->text('theater_name', __('Theater name'));
+        // $form->text('order_info', __('Order info'));
+
+        $form->select('theater_name', __('対象劇場'))->options([
+            ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
         ]);
+
+        $form->textarea('order_info', __('注意書き'))->rows(10);
 
         $form->tools(function (Form\Tools $tools) {
             // 右上の表示ボタンを非表示
@@ -76,6 +79,7 @@ class MasterController extends AdminController
             $tools->disableDelete();
             // 管理ボタンを非表示
             $tools->disableList();
+
         });
 
         $form->footer(function ($footer) {

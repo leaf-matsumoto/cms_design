@@ -45,7 +45,14 @@
     <div class="content-wrapper" id="pjax-container">
         {!! Admin::style() !!}
         <div id="app">
-        @yield('content')
+
+            <!-- TOPページにカレンダーを表示するための条件分岐 -->
+            @if(!\Request::is('admin'))
+                @yield('content')
+            @elseif(\Request::is('admin'))
+                @include('admin::add.calender')
+            @endif
+
         </div>
         {!! Admin::script() !!}
         {!! Admin::html() !!}

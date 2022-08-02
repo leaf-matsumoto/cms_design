@@ -35,5 +35,13 @@ Route::group([
     $router->resource('masters', MasterController::class);
     $router->resource('master2s', Master2Controller::class);
 
+    // オーダー用紙管理
+    $router->resource('purchase-papers', PurchasePapersController::class);
+
+    // アレルギー管理
+    $router->resource('allergies', AllergyController::class);
+
+    // おすすめ商品管理
+    $router->resource('pickups', PickupController::class);
 
 });

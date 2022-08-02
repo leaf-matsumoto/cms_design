@@ -77,6 +77,7 @@ class SingleMenuController extends AdminController
             $filter->like('menu_name', 'キーワード')->placeholder('キーワードを入力してください');
         });
 
+   
 
         return $grid;
     }
