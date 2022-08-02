@@ -38,13 +38,13 @@ tr {
 
 /* マスタ同期ボタン */
 .btn-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 25px;
 }
 
 .btn-chain {
-    width: 50%;
+    width: 30%;
 }
 
 .chain-result {
@@ -68,6 +68,10 @@ tr {
         text-align: center;
         padding: 10px 35px;
         width: 100%
+    }
+
+    thead.allergy-title th:first-child {
+        width: 10px;
     }
 
     /* ボディ項目・フッター項目 */

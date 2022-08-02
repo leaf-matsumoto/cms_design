@@ -50,6 +50,11 @@
                             @include('admin::add.pickup_table')
                         @endif
 
+                        <!-- QRコードの条件分岐 -->
+                        @if(\Request::is('admin/qrcodes/create'))
+                            @include('admin::add.qrcode')
+                        @endif
+
                         </div>
 
                 @endif

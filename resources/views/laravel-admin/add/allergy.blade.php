@@ -74,8 +74,8 @@
 
             <thead class="allergy-title">
                 <tr>
-                    <th>品名</th>
                     <th></th>
+                    <th>品名</th>
                     <th>卵</th>
                     <th>乳</th>
                     <th>小麦</th>
@@ -88,42 +88,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>チュリトス チョコミント</th>
-                    <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td class="column-mobile"><input type="submit" class="btn-delete" style="color:red;font-weight:bold;font-size:25px;padding:0 15px;border:none;background-color:#fff;" value="×"></td>                                    </tr>
-                <tr>
-                    <th>ひとくち大学いも</th>
-                    <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td class="column-mobile" style="color:red;font-weight:bold;font-size:25px;padding:0 15px;">×</td>                                   </tr>
-                <tr>
-                    <th>チュリトス　ストロベリー</th>
-                    <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td class="column-mobile" style="color:red;font-weight:bold;font-size:25px;padding:0 15px;">×</td>                                    </tr>
-                <tr>
-                    <th>ポップコーン　キャラメル</th>
                     
                     <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
+                    <th>チュリトス チョコミント</th>
                     <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                     <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                     <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
@@ -131,7 +98,43 @@
                     <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                     <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                     <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
-                    <td class="column-mobile" style="color:red;font-weight:bold;font-size:25px;padding:0 15px;">×</td>
+                    <td class="column-mobile"><button type="button" class="btn btn-danger btn-xs" style="font-weight:bold;padding:1px 7px;">×</button></td>
+                </tr>
+                <tr>
+                    <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
+                    <th>ひとくち大学いも</th>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td class="column-mobile"><button type="button" class="btn btn-danger btn-xs" style="font-weight:bold;padding:1px 7px;">×</button></td>
+                </tr>
+                <tr>
+                    <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
+                    <th>チュリトス　ストロベリー</th>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td class="column-mobile"><button type="button" class="btn btn-danger btn-xs" style="font-weight:bold;padding:1px 7px;">×</button></td>
+                </tr>
+                <tr>                   
+                    <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
+                    <th>ポップコーン　キャラメル</th>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
+                    <td class="column-mobile"><button type="button" class="btn btn-danger btn-xs" style="font-weight:bold;padding:1px 7px;">×</button></td>
                 </tr>
             </tbody>
 

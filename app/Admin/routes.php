@@ -44,4 +44,7 @@ Route::group([
     // おすすめ商品管理
     $router->resource('pickups', PickupController::class);
 
+    // QRコード設定
+    $router->resource('qrcodes', Qrcodecontroller::class);
+
 });
