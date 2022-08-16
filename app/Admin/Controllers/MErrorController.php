@@ -25,13 +25,22 @@ class MErrorController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new MError());
+
+        // デフォルトフィルタ開く
+        $grid->expandFilter();
+
+        // フィルタを非表示
+        $grid->disableFilter();
+
+
         // チェックボックス非表示
         $grid->option('show_row_selector' , false);
 
-        $grid->column('id', 'ID');
-        $grid->column('err_code', 'エラーコード');
-        $grid->column('err_contents', 'エラー内容');
-        $grid->column('err_handling', 'エラー対応');
+        $grid->column('id', 'ID')->sortable();
+        $grid->column('err_code', 'エラーコード')->sortable();
+        $grid->column('err_title', 'タイトル')->sortable();
+        $grid->column('err_contents', 'エラー内容')->sortable();
+        $grid->column('err_handling', 'エラー対応')->sortable();
         
         // すべてのアクションを非表示
         $grid->disableActions();
@@ -42,13 +51,16 @@ class MErrorController extends AdminController
         // 新規の非表示
         $grid->disableCreateButton();
 
+        // クイック検索
+        $grid->quickSearch('err_code')->placeholder('キーワードを入力');
+
         // フィルタ内検索項目
-        $grid->filter(function($filter){
-            // デフォルトの検索ボックスを非表示にする
-            $filter->disableIdFilter();
-            // 検索ボックスの追加
-            $filter->like('name', 'キーワード');
-        });
+        // $grid->filter(function($filter){
+        //     // デフォルトの検索ボックスを非表示にする
+        //     $filter->disableIdFilter();
+        //     // 検索ボックスの追加
+        //     $filter->like('name', 'キーワード');
+        // });
 
         return $grid;
     }
@@ -83,6 +95,7 @@ class MErrorController extends AdminController
         $form = new Form(new MError());
 
         $form->text('err_code', 'エラーコード');
+        $form->text('err_title', 'エラータイトル');
         $form->textarea('err_contents', 'エラー内容')->rows(5);
         $form->textarea('err_handling', 'エラー対応')->rows(5);
 

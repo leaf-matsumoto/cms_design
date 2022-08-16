@@ -17,16 +17,16 @@
                     <div class="box-body">
                             
                         <!-- HTML形式でのカレンダー -->                                
-                        <div class="container calender" style="float:left;margin-left:15%;width:70%;">
+                        <div class="container calender" style="float:left;margin-left:5%;width:80%;">
                             <h3 class="mb-5" style="margin-bottom:20px;">
                                 <a href="#" style="background-color:#111;padding:3px 10px;color:#fff;border-top-left-radius:5px;border-bottom-left-radius:5px;font-size:15px;">&lt;</a>
                                 <a href="#" style="background-color:#111;padding:3px 10px;color:#fff;border-top-right-radius:5px;border-bottom-right-radius:5px;font-size:15px;">&gt;</a>
                                 <a href="" class="btn-alert" style="background-color:#808080;padding:3px 10px;color:#fff;border-radius:5px;font-size:15px;">today</a>
                                 <span style="margin-left:20px;">&nbsp;2022年 7月&nbsp;</span>
                             </h3>
-                            <table class="table table-bordered">
+                            <table class="table table-bordered calender">
                                 <tbody><tr>
-                                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                                    <th class="sun">Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th class="sat">Sat</th>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -35,37 +35,37 @@
                                     <td>2<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>3<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>4<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-                                    <td>5<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td class="sat">5<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                 </tr>
                                 <tr>
-                                    <td>6<div style="color:#111;text-align:center;margin:20px auto;">9:00 - 24:30</div></td>
+                                    <td class="sun">6<div style="color:#111;text-align:center;margin:20px auto;">9:00 - 24:30</div></td>
                                     <td>7<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>8<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>9<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>10<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>11<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-                                    <td>12<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td class="sat">12<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                 </tr>
                                 <tr>
-                                    <td>13<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td class="sun">13<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>14<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>15<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td class="today">16<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>18<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-                                    <td>19<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
+                                    <td class="sat">19<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                 </tr>
                                 <tr>
-                                    <td>20<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
+                                    <td class="sun">20<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>21<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>22<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>23<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>24<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>25<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
-                                    <td>26<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
+                                    <td class="sat">26<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                 </tr>
                                 <tr>
-                                    <td>27<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
+                                    <td class="sun">27<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>28<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>29<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>30<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
@@ -114,7 +114,7 @@
 
                 
 
-
+<!-- 
     <style>
             h3 {
                 /* text-align:center; */
@@ -144,7 +144,7 @@
             .calender th:nth-of-type(7), .calender td:nth-of-type(7) {
                 color: blue;
             }
-    </style>
+    </style> -->
 
 
 <!-- アラート -->
@@ -172,8 +172,8 @@ $(function (){
 });
 
 $(function (){
-    $(".btn-cancel").click(function(){
-        if(confirm("キャンセルを実行しますか？")){
+    $(".btn-warning").click(function(){
+        if(confirm("変更内容を取り消しますか？")){
             // そのままsubmit処理を実行（※削除）
         }else{
             // キャンセル

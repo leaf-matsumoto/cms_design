@@ -3,5 +3,5 @@
 </div>
 
 <div style="text-align:center;margin-bottom:100px;" class="print">
-    <button type="submit" class="btn btn-success">QRコード作成</button>
+    <button type="submit" class="btn btn-success">QRコード更新</button>
 </div>

@@ -5,33 +5,30 @@
 <div class="modal-window" data-id="modal1">
 
     <!-- 閉じるボタン -->
-    <div style="text-align:right;margin-bottom:0px;color:red;font-weight:bold;">
+    <!-- <div style="text-align:right;margin-bottom:0px;color:red;font-weight:bold;">
         <button class="js-close button-close">×</button>
-    </div>
+    </div> -->
 
     <div class="box-header with-border">
         <div class="pull-left" style="margin-left:9%;>
                 <div class="btn-group" style="margin-right: 5px" data-toggle="buttons">
             <label class="btn btn-sm btn-dropbox 62e888e05414c-filter-btn active" title="検索条件">
-            <input type="checkbox"><i class="fa fa-filter"></i><span class="hidden-xs">&nbsp;&nbsp;検索条件</span>
+            <input type="checkbox"><i class="fa fa-chevron-up"></i><span class="hidden-xs">&nbsp;&nbsp;検索条件</span>
             </label>
         </div>
     </div>
 
 
-    <div class="box-header with-border filter-box" id="filter-box">
+    <div class="box-header with-border filter-box" id="">
         <form action="http://localhost/admin/single-menus" class="form-horizontal" pjax-container="" method="get">
             
-
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="box-body">
-                        <div class="fields-group">
-                
+                        <div class="fields-group fields-group-02">
                             <div class="form-group">
-                                <label class="col-sm-2 control-label"> 劇場選択</label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-2 control-label"> 商品分類</label>
+                                <div class="col-sm-9">
                                     <select class="form-control theater_name select2-hidden-accessible" name="theater_name" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                         <option></option>
                                         <option value="0">value00</option>
@@ -39,14 +36,14 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group form-group-02">
                                 <label class="col-sm-2 control-label"> キーワード</label>
-                                <div class="col-sm-8">
+                                <div class="col-sm-9">
                                     <div class="input-group input-group-sm">
                                         <div class="input-group-addon">
                                         <i class="fa fa-pencil"></i>
                                         </div>
-                                        <input type="text" class="form-control menu_name" placeholder="キーワードを入力してください" name="menu_name" value="">
+                                        <input type="text" class="form-control menu_name" placeholder="商品コードまたは商品名を入力" name="menu_name" value="">
                                     </div>
                                 </div>
                             </div>
@@ -80,14 +77,14 @@
 
 
 
-    <table class="table table-hover grid-table" id="grid-table62cb85ed4552e">
+    <table class="table table-hover grid-table" id="grid-table62cb85ed4552e" style="width:1200px;margin-left:100px;">
         <!-- カラム名 -->
         <thead>
             <tr>
                 <th class="column-__row_selector__">
                     <div class="icheckbox_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;">
-                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                    </div>&nbsp;
+                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; w%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
                 </th>
                 <!-- <th class="column-id">Id</th> -->
                 <th class="column-menu_code">商品コード</th>
@@ -109,8 +106,8 @@
                 <td class="column-menu_code">A200000100</td>
                 <td class="column-menu_name">POPセット塩</td>
                 <td class="column-menu_price">700</td>
-                <td class="column-self">販売中</td>
-                <td class="column-mobile">販売中</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
             </tr>
             <tr data-key="2">
                 <td class="column-__row_selector__">
@@ -122,8 +119,8 @@
                 <td class="column-menu_code">A200000110</td>
                 <td class="column-menu_name">POPセット塩 L</td>
                 <td class="column-menu_price">800</td>
-                <td class="column-self">販売中</td>
-                <td class="column-mobile">販売中</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
             </tr>
             <tr data-key="3">
                 <td class="column-__row_selector__">
@@ -135,8 +132,8 @@
                 <td class="column-menu_code">A200000200</td>
                 <td class="column-menu_name">POPセットキャラメル</td>
                 <td class="column-menu_price">800</td>
-                <td class="column-self">販売中</td>
-                <td class="column-mobile">販売中</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
             </tr>
             <tr data-key="4">
                 <td class="column-__row_selector__">
@@ -148,8 +145,8 @@
                 <td class="column-menu_code">A200000201</td>
                 <td class="column-menu_name">POPセットキャラメル L</td>
                 <td class="column-menu_price">900</td>
-                <td class="column-self">販売中</td>
-                <td class="column-mobile">販売中</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
             </tr>
             <tr data-key="5">
                 <td class="column-__row_selector__">
@@ -161,20 +158,24 @@
                 <td class="column-menu_code">A200000210</td>
                 <td class="column-menu_name">POPセット ハーフ&amp;ハーフ</td>
                 <td class="column-menu_price">900</td>
-                <td class="column-self">販売中</td>
-                <td class="column-mobile">販売中</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
             </tr>
         </tbody>
     </table>
 
 
     <!-- ページネーション -->
-    <div class="box-footer clearfix">
+    <div class="box-footer clearfix" style="width:1200px;margin-left:100px;">
         {!! $grid->paginator() !!}
     </div>
 
-    <div class="pull-right">
-        <button type="" class="btn btn btn-success"style="margin-bottom: 50px;">追加</button>
+
+    <div class="pull-right" style="margin-right:170px;padding-top:20px;">
+        <button type="" class="btn btn btn-success"style="">追加</button>
+    </div>
+    <div class="pull-right" style="margin-right:10px;padding-top:20px;">
+        <button type="" class="btn btn btn-warning"style="">キャンセル</button>
     </div>
 
 

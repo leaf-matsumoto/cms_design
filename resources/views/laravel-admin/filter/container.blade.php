@@ -2,6 +2,7 @@
 <div class="box-header with-border {{ $expand?'':'hide' }} filter-box" id="{{ $filterID }}">
     <form action="{!! $action !!}" class="form-horizontal" pjax-container method="get">
 
+        <!-- 検索ボックス -->
         <div class="row">
             @foreach($layout->columns() as $column)
             <div class="col-md-{{ $column->width() }}">
@@ -17,6 +18,7 @@
         </div>
         <!-- /.box-body -->
 
+        <!-- 検索/キャンセル ボタン -->
         <div class="box-footer">
             <div class="row">
                 <div class="col-md-{{ $layout->columns()->first()->width() }}">

@@ -55,18 +55,29 @@ class Master2Controller extends AdminController
     {
         $form = new Form(new Master2());
         
-            $form->select('menu_class', '劇場選択')->options([
-                '選択してください' , 'フード' , 'ドリンク' , 'その他'
-            ]);
+        // $form->text('sample01', __('Sample01'));
+        // $form->text('sample02', __('Sample02'));
+        $form->setWidth(3, 2)->select('menu_class', '劇場選択')->options([
+            '' , 'フード' , 'ドリンク' , 'その他'
+        ]);
 
-            $form->footer(function ($footer) {
-                // 表示のチェックボックスを非表示
-                $footer->disableViewCheck();
-                // 編集を続けるを非表示
-                $footer->disableEditingCheck();
-                //  作成を続行するを非表示
-                $footer->disableCreatingCheck();
-            });
+        $form->tools(function (Form\Tools $tools) {
+            // 右上の表示ボタンを非表示
+            $tools->disableView();
+            // 右上の削除ボタンを非表示
+            $tools->disableDelete();
+            // 管理ボタンを非表示
+            $tools->disableList();
+        });
+
+        $form->footer(function ($footer) {
+            // 表示のチェックボックスを非表示
+            $footer->disableViewCheck();
+            // 編集を続けるを非表示
+            $footer->disableEditingCheck();
+            //  作成を続行するを非表示
+            $footer->disableCreatingCheck();
+        });
 
         return $form;
     }

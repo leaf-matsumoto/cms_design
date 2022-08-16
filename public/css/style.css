@@ -6,12 +6,13 @@
 /* 検索条件ボタン */
 /* .btn-dropbox { */
 .btn-group {
-  margin-top:10px;
+  margin-top:20px;
 }
 
-.box-footer {
-    border-top: none !important;
-    border-bottom: 1px solid #f4f4f4 !important;
+.box-body, .box-footer {
+    border: none !important;
+    /* border-bottom: 1px solid #696969 !important; */
+    /* padding-bottom: 10px; */
 }
 
 /* フィルタ（検索）の下線非表示 */
@@ -23,11 +24,17 @@
 .grid-box {
     padding-right:100px;
     padding-left:100px;
+    /* border-top: none; */
 }
+
+
+
+
 
 /* 一覧表のタイトルへ色付け */
 thead {
-    background-color: rgb(243, 243, 243) !important;
+    background-color: #3c8dbc2a !important;
+    /* color: #fff; */
 }
 
 tr {
@@ -111,7 +118,7 @@ tr {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70%;
-        height: 80%;
+        height: 70%;
         background-color: #ffffff;
         border-radius: 5px;
         z-index: 11;
@@ -181,4 +188,144 @@ tr {
 
 .explain {
     margin-top:30px;
+}
+
+
+/* 削除ボタン */
+.btn-danger {
+    background-color: rgba(255, 0, 0, 0.651);
+}
+
+
+/* カレンダー */
+
+table.calender th {
+    background-color: #696969;
+    text-align: center;
+    color: #fff;
+}
+
+table.calender th.sun {
+    background-color: rgba(255, 0, 0, 0.651);
+}
+
+table.calender th.sat {
+    background-color: rgba(67, 102, 255, 0.842);
+}
+
+table.calender td.sun {
+    color: red;
+}
+
+table.calender td.sat {
+    color: blue;
+}
+
+
+
+/* 検索ボックス */
+/* @media (min-width: 768px){ */
+    /* .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: right;
+        width: 100%;
+        text-align: left;
+    } */
+/* } */
+
+/* @media (max-width: 1690px){ */
+    /* .form-horizontal .control-label {
+        text-align: left;
+    }
+} */
+
+
+form label {
+    margin-bottom: 5px!important;
+}
+
+
+.form-group {
+    margin-left: 5%!important;
+    /* margin-bottom: 30px!important; */
+}
+
+
+
+/* モバイル販売管理の劇場選択 */
+.theater-search {
+    width: 400px;
+}
+
+
+
+.col-md-8 {
+    padding-right:0;
+    margin-bottom:20px;
+}
+
+
+
+table {
+    padding-right:100px!important;
+    padding-left:100px!important;
+}
+
+
+
+
+
+/* ---------------------------- */
+/* --- トグルボタン式のチェックボックス --- */
+/* ---------------------------- */
+.ItemBox{
+    margin-bottom: 20px; /* なくてもOK */
+}
+
+.ItemBox-CheckBox{
+    margin-top: 10px;
+    display: flex;
+    /* align-items: left; */
+}
+
+.ItemBox-CheckBox-Title {
+    font-weight:bold;
+    padding-top:2px;
+}
+
+
+.ItemBox-CheckBox-Input{
+    display: none; /* inputタグ（✔は非表示にする */
+}
+
+.ItemBox-CheckBox-Label{
+    position: relative;
+    margin-left: 15px;
+    width: 47px;
+    height: 24px;
+    border-radius: 80px;
+    background: #d0d2d9; /* チェックされていない時の背景色 */
+    cursor: pointer;
+    transition: .2s ease; /* 円が動くスピードを指定 */
+}
+
+.ItemBox-CheckBox-Input:checked + .ItemBox-CheckBox-Label{
+    background: #41c9b4; /* チェックされた時の背景色 */
+}
+
+.ItemBox-CheckBox-Label:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 80px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transition: .2s ease; /* 円が動くスピードを指定 */
+}
+
+.ItemBox-CheckBox-Input:checked + .ItemBox-CheckBox-Label:before{
+    left: 25px;
 }

@@ -34,6 +34,7 @@ Route::group([
     // マスタ同期
     $router->resource('masters', MasterController::class);
     $router->resource('master2s', Master2Controller::class);
+    $router->resource('master3s', Master3Controller::class);
 
     // オーダー用紙管理
     $router->resource('purchase-papers', PurchasePapersController::class);
@@ -46,5 +47,14 @@ Route::group([
 
     // QRコード設定
     $router->resource('qrcodes', Qrcodecontroller::class);
+
+    // コンセ完了メール
+    $router->resource('mails', MailController::class);
+
+    // クーポン管理
+    $router->resource('coupons', CouponController::class);
+
+    // モバイル販売管理
+    $router->resource('mobiles', MobileController::class);
 
 });

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'cancel_under'          => 'キャンセル',
     'online'                => 'オンライン',
     'login'                 => 'ログイン',
     'logout'                => 'ログアウト',
@@ -90,7 +91,7 @@ return [
     'all_methods_if_empty'  => '空欄の場合は全て',
     'all'                   => '全て',
     'current_page'          => '現在のページ',
-    'selected_rows'         => '選択行のみ',
+    'selected_rows'         => '',
     'upload'                => 'アップロード',
     'new_folder'            => '新規フォルダ',
     'time'                  => '日時',

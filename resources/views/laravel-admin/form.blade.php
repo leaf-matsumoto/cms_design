@@ -1,3 +1,6 @@
+<!-- モーダルウィンドウ（商品選択） -->
+@include('admin::add.modal_02')
+
 <div class="box box-info">
     <div class="box-header with-border">
         <!-- <h3 class="box-title">{{ $form->title() }}</h3> -->
@@ -9,6 +12,14 @@
     <!-- /.box-header -->
     <!-- form start -->
     {!! $form->open() !!}
+
+
+
+    <!-- モバイル販売管理の検索入力項目 -->
+    @if(\Request::is('admin/mobiles/create'))
+        @include('admin::add.calender_search')
+    @endif
+
 
     <div class="box-body">
 
@@ -40,6 +51,11 @@
                             @include('admin::add.master2_connect')
                         @endif
 
+                        <!-- マスター同期画面の条件分岐 -->
+                        @if(\Request::is('admin/master3s/create'))
+                            @include('admin::add.master3_connect')
+                        @endif
+
                         <!-- アレルギー一覧の条件分岐 -->
                         @if(\Request::is('admin/allergies/create'))
                             @include('admin::add.allergy')                           
@@ -55,6 +71,16 @@
                             @include('admin::add.qrcode')
                         @endif
 
+                        <!-- クーポン編集 -->
+                        @if(\Request::is('admin/coupons/*/edit'))
+                            @include('admin::add.coupon_edit')
+                        @endif
+
+                        <!-- モバイル販売管理の条件分岐 -->
+                        @if(\Request::is('admin/mobiles/create'))
+                            @include('admin::add.calender_html')
+                        @endif
+
                         </div>
 
                 @endif
@@ -65,7 +91,7 @@
 
     <!-- /.box-body -->
     <!-- マスター同期画面の条件分岐(非表示) -->
-    @if(!\Request::is('admin/masters/create') && !\Request::is('admin/master2s/create'))
+    @if(!\Request::is('admin/masters/create') && !\Request::is('admin/master2s/create') && !\Request::is('admin/master3s/create'))
 
         {!! $form->renderFooter() !!}
 
@@ -78,4 +104,12 @@
 <!-- /.box-footer -->
     {!! $form->close() !!}
 </div>
+
+<!-- アラート -->
+<script src="{{ asset('/js/aleart.js') }}"></script>
+
+<!-- モーダル -->
+<script src="{{ asset('/js/modal_form.js') }}"></script>
+
+
 

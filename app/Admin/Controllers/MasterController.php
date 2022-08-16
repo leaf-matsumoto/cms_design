@@ -65,8 +65,8 @@ class MasterController extends AdminController
 
         // $form->text('sample01', __('Sample01'));
         // $form->text('sample02', __('Sample02'));
-        $form->select('menu_class', '劇場選択')->options([
-            '選択してください' , 'フード' , 'ドリンク' , 'その他'
+        $form->setWidth(3, 2)->select('menu_class', '劇場選択')->options([
+            '' , 'フード' , 'ドリンク' , 'その他'
         ]);
 
         $form->tools(function (Form\Tools $tools) {

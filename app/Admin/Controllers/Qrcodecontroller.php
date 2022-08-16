@@ -64,7 +64,7 @@ class Qrcodecontroller extends AdminController
         $form = new Form(new Qrcode());
 
         //劇場選択
-        $form->select('theater_name', __('対象劇場'))->options([
+        $form->select('theater_name', __('劇場選択'))->options([
             ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
         ]);
 
