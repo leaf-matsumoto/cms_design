@@ -65,9 +65,9 @@ class MailController extends AdminController
             ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
         ]);
 
-        $form->textarea('header_mail', 'ヘッダー')->rows(5);
-        $form->textarea('main_mail', '本文')->rows(15);
-        $form->textarea('footer_mail', 'フッター')->rows(5);
+        // $form->textarea('header_mail', 'ヘッダー')->rows(5);
+        $form->textarea('main_mail', '差込文章')->rows(10)->placeholder('差込文章を入力');
+        // $form->textarea('footer_mail', 'フッター')->rows(5);
 
         $form->tools(function (Form\Tools $tools) {
             // 右上の表示ボタンを非表示

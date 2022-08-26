@@ -155,7 +155,7 @@
 
 
 <!-- マスター同期画面/おすすめ商品設定の条件分岐 -->
-@if(\Request::is('admin/masters/create') || \Request::is('admin/master2s/create') || \Request::is('admin/pickups'))
+@if(\Request::is('admin/masters/create') || \Request::is('admin/master2s/create') || \Request::is('admin/master3s/create') || \Request::is('admin/pickups'))
 
 <style>
 

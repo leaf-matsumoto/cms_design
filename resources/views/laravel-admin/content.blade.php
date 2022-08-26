@@ -5,7 +5,7 @@
         <!-- 各ページのタイトルを表示 -->
         <h1>
         @if(\Request::is('admin/masters/create') || \Request::is('admin/master2s/create') || \Request::is('admin/master3s/create'))
-            マスタ同期管理                            
+            マスター同期                            
         @endif
         @if(\Request::is('admin/single-menus'))
             単品商品管理                            
@@ -14,16 +14,16 @@
             単品商品編集                            
         @endif
         @if(\Request::is('admin/set-menus'))
-            セット商品管理                            
+            セット構成管理                            
         @endif
         @if(\Request::is('admin/set-menus/*/edit'))
-            セット商品編集                            
+            セット構成編集                            
         @endif
         @if(\Request::is('admin/allergies/create'))
-            食物アレルギー設定                            
+            アレルギー表管理                            
         @endif
         @if(\Request::is('admin/new-contents/create'))
-            お知らせ管理                           
+            案内文言管理                           
         @endif
         @if(\Request::is('admin/purchase-papers/create'))
             オーダー用紙管理                           
@@ -32,31 +32,31 @@
             コンセ完了メール管理                           
         @endif
         @if(\Request::is('admin/qrcodes/create'))
-            メンテナンス用QR設定                           
+            メンテナンスQR更新                           
         @endif
         @if(\Request::is('admin/mobiles/create'))
-            モバイル販売管理                           
+            モバイルオーダー稼働設定                           
         @endif
         @if(\Request::is('admin/order-mgts'))
-            オーダー管理                           
+            オーダー情報管理                           
         @endif
-        @if(\Request::is('admin/order-mgts/*/edit'))
-            オーダー詳細                           
+        @if(\Request::is('admin/order-mgts/*'))
+            オーダー情報詳細                           
         @endif
         @if(\Request::is('admin/coupons'))
-            クーポン管理                           
+            コンセクーポン管理                           
         @endif
         @if(\Request::is('admin/coupons/*/edit'))
-            クーポン編集                           
+            コンセクーポン編集                           
         @endif
         @if(\Request::is('admin/s-errors'))
             セルフ端末エラー一覧                          
         @endif
         @if(\Request::is('admin/m-errors'))
-            モバイルエラー一覧                           
+            モバイルオーダーエラー一覧                           
         @endif
         @if(\Request::is('admin/pickups'))
-            おすすめ商品設定                           
+            おすすめタブ管理                           
         @endif
 
 

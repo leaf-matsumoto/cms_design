@@ -31,7 +31,7 @@ class SetMenuController extends AdminController
 
         $grid->column('menu_code', '商品コード')->sortable();
         $grid->column('menu_type', '商品分類')->sortable();
-        $grid->column('p_menu_name', '表示名')->sortable();
+        $grid->column('p_menu_name', '商品表示名')->sortable();
         $grid->column('menu_price', '商品単価')->sortable();
         $grid->column('self', 'セルフレジ')->sortable();
         $grid->column('mobile', 'モバイルオーダー')->sortable();
@@ -153,11 +153,14 @@ class SetMenuController extends AdminController
     {
         $form = new Form(new SetMenu());
 
-        $form->text('theater_name', '劇場名')->disable();
-        $form->text('menu_code', '商品コード')->disable();
-        $form->text('menu_type', '商品分類')->disable();
-        $form->text('basic_menu_name', '基本商品名')->disable();
-        $form->text('receipt_menu_name', '商品レシート名')->disable();
+        $form->text('theater_name', '劇場名')->disable()->placeholder('＊');
+        $form->text('menu_code', '劇場運用反映コード')->disable()->placeholder('＊');;
+        $form->text('', 'セット順番号')->disable()->placeholder('＊');;
+        $form->text('', '連番')->disable()->placeholder('＊');;
+        $form->text('menu_code', '商品コード')->disable()->placeholder('＊');;
+        $form->text('menu_type', '商品分類')->disable()->placeholder('＊');;
+        $form->text('basic_menu_name', '基本商品名')->disable()->placeholder('＊');;
+        $form->text('receipt_menu_name', '商品レシート名')->disable()->placeholder('＊');;
 
         // $form->text('menu_code', '商品コード');
         // $form->text('menu_type', '商品分類');
@@ -165,14 +168,22 @@ class SetMenuController extends AdminController
         // $form->text('receipt_menu_name', '商品レシート名');
 
         $form->text('order_menu_name', 'オーダー管理名');
-        $form->text('p_menu_name', '表示名');
+
+        $form->text('sample1', 'オーダー管理グループ名')->placeholder('オーダー管理グループ名');
+        $form->text('sample2', 'オーダー管理グループサブ名')->placeholder('オーダー管理グループサブ名');
+        $form->text('sample3', '商品グループ表示名')->placeholder('商品グループ表示名');
+        $form->text('sample4', '商品グループサブ表示名')->placeholder('商品グループサブ表示名');
+
+        $form->text('p_menu_name', '商品表示名');
         // 小商品１
-        $form->textarea('c_menu_name', __('子商品 ①'))->rows(2)->placeholder('小商品情報を表示');
+        $form->textarea('c_menu_name', __('子商品 ①'))->rows(2)->placeholder('小商品情報を表示')->disable();
         // 小商品２
-        $form->textarea('c_menu_name', __('子商品 ②'))->rows(2)->placeholder('小商品情報を表示');
+        $form->textarea('c_menu_name', __('子商品 ②'))->rows(2)->placeholder('小商品情報を表示')->disable();
         // 小商品３
-        $form->textarea('c_menu_name', __('子商品 ③'))->rows(2)->placeholder('小商品情報を表示');
+        $form->textarea('c_menu_name', __('子商品 ③'))->rows(2)->placeholder('小商品情報を表示')->disable();
         $form->currency('menu_price', '商品単価')->symbol('￥')->digits(0)->disable();
+
+        $form->number('sample', '購入制限数')->placeholder('半角数値');
 
         // $form->currency('menu_price', '商品単価')->symbol('￥')->digits(0);
         
@@ -180,17 +191,31 @@ class SetMenuController extends AdminController
         $form->radio('self', 'セルフレジ')->options([
             '販売可'=>'販売可' , '販売不可'=>'販売不可' , '販売停止'=>'販売停止' , '売り切れ'=>'売り切れ'
         ]);
+
         $form->radio('mobile', 'モバイルオーダー')->options([
             '販売可'=>'販売可' , '販売不可'=>'販売不可' , '販売停止'=>'販売停止' , '売り切れ'=>'売り切れ'
         ]);
+        
+
+        $form->select('menu_class', 'セット運用カテゴリー')->options([
+            '0'=>'フード種別' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
+        ]);
+
         $form->select('menu_class', '商品準備場所')->options([
             '選択してください' , 'フード' , 'ドリンク' , 'その他'
         ]);
+
+        // これが影響し新規登録ができない？
+        $form->checkbox('theater_name', '在庫フラグ')->options([1 => ' '])->disable();
+
+        // これが影響し新規登録ができない？
+        $form->checkbox('theater_name', 'アルコールフラグ')->options([1 => ' ']);
+
         // これが影響し新規登録ができない？
         $form->checkbox('theater_name', '期間限定')->options([1 => ' ']);
         
-        $form->date('start_sale', '販売開始日');
-        $form->date('end_sale', '販売終了日');
+        $form->date('start_sale', '販売開始日')->placeholder('＊');;
+        $form->date('end_sale', '販売終了日')->placeholder('＊');;
         $form->image('menu_img','商品画像');
 
         // 商品説明

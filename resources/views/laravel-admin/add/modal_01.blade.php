@@ -185,77 +185,247 @@
 
 
 
-
-
-
-
-
 <!-- モーダルウィンドウ（プレビュー） -->
-<div class="modal-window-02" data-id="modal2" style="width:500px;">
-    <!-- <p>モーダルNo.2</p>
-    <button class="js-close button-close">Close</button> -->
-    <!-- 閉じるボタン -->
-    <div style="text-align:right;margin-bottom:20px;color:red;font-weight:bold;"><button class="js-close button-close">×</button></div>
+<div class="modal-window-02" data-id="modal2" style="width:500px;padding:0;">
 
-        <div class="row">
-            <div class="col-md-12">
-                                
-                <div class="col-sm-6">
-                    <div class="input-group input-group-sm p-img">
-                        <img src="{{ asset('sample-img/a.jpg') }}" alt="画像1" style="width:180px">
-                    </div>
-                    <div style="margin-top:5px;">ポップコーンセット（塩）</div>
-                    <div style="margin-bottom:20px;">¥800</div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="input-group input-group-sm p-img">
-                        <img src="{{ asset('sample-img/b.jpg') }}" alt="画像2" style="width:180px">
-                    </div>
-                    <div style="margin-top:5px;">メガポテトセット</div>
-                    <div style="margin-bottom:20px;">¥1,500</div>
-                </div>
-            </div>
- 
-            <div class="col-md-12">                               
-                <div class="col-sm-6">
-                    <div class="input-group input-group-sm p-img">
-                        <img src="{{ asset('sample-img/c.jpg') }}" alt="画像1" style="width:180px">
-                    </div>
-                    <div style="margin-top:5px;">ナゲット生ビールセット</div>
-                    <div style="margin-bottom:20px;">¥900</div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="input-group input-group-sm p-img">
-                        <img src="{{ asset('sample-img/d.jpg') }}" alt="画像2" style="width:180px">
-                    </div>
-                    <div style="margin-top:5px;">ポップコーンペアセット（塩）</div>
-                    <div style="margin-bottom:20px;">¥1,250</div>
-                </div>
-            </div>
-
-            <div class="col-md-12">                               
-                <div class="col-sm-6">
-                    <div class="input-group input-group-sm p-img">
-                        <img src="{{ asset('sample-img/e.jpg') }}" alt="画像1" style="width:180px">
-                    </div>
-                    <div style="margin-top:5px;">ポテトセット</div>
-                    <div style="margin-bottom:20px;">¥700</div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="input-group input-group-sm p-img">
-                        <img src="{{ asset('sample-img/f.jpg') }}" alt="画像2" style="width:180px">
-                    </div>
-                    <div style="margin-top:5px;">アイスクレープ</div>
-                    <div style="margin-bottom:20px;">¥360</div>
-                </div>
-            </div>
-
-
-
-                
-        </div>
+    <div class="" style="width:100%;height:50px;background-color:#123;text-align:right;color:#fff;font-weight:bold;padding-top:10px;padding-right:10px;">
+        <button class="js-close button-close">×</button>
     </div>
-</div> <!-- ? -->
+
+
+    <!-- 閉じるボタン -->
+    <!-- <div style="text-align:right;margin-bottom:20px;color:red;font-weight:bold;">
+        <button class="js-close button-close">×</button>
+    </div> -->
+
+
+
+    <div class="area">
+        <input type="radio" name="tab_name" id="tab1" checked>
+        <label class="tab_class" for="tab1">モバイル端末</label>
+        <div class="content_class">
+            <!-- <p>タブ1のコンテンツを表示します</p> -->
+
+            <!-- モバイルプレビュー -->
+            <div class="row" style="margin:30px;">
+                <div class="row">
+                    <div class="col-md-12">
+                                        
+                        <div class="col-sm-6" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/a.jpg') }}" alt="画像1" style="width:190px;">
+                                </div>
+                                <div class="preview-info">
+                                    <div style="margin-top:5px;">ポップコーンセット（塩）</div>
+                                    <div>¥800</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                       
+                        <div class="col-sm-6" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/b.jpg') }}" alt="画像1" style="width:190px;">
+                                </div>
+                                <div class="preview-info">
+                                    <div style="margin-top:5px;">メガポテトセット</div>
+                                    <div>¥1,500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-12">                               
+                                        
+                    <div class="col-sm-6" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/c.jpg') }}" alt="画像1" style="width:190px;">
+                                </div>
+                                <div class="preview-info">
+                                    <div style="margin-top:5px;">ナゲット生ビールセット</div>
+                                    <div>¥900</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                        
+                        <div class="col-sm-6" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/d.jpg') }}" alt="画像1" style="width:190px;">
+                                </div>
+                                <div class="preview-info">
+                                    <div style="margin-top:5px;">ポップコーンペアセット（塩）</div>
+                                    <div>¥1,250</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">                               
+                                        
+                                        
+                        <div class="col-sm-6" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/e.jpg') }}" alt="画像1" style="width:190px;">
+                                </div>
+                                <div class="preview-info">
+                                    <div style="margin-top:5px;">ポテトセット</div>
+                                    <div>¥700</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                        
+                        <div class="col-sm-6" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/f.jpg') }}" alt="画像1" style="width:190px;">
+                                </div>
+                                <div class="preview-info">
+                                    <div style="margin-top:5px;">アイスクレープ</div>
+                                    <div>¥360</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>             
+                </div>
+            </div>
+        </div> <!-- モバイル端末ここまで -->
+
+
+        <input type="radio" name="tab_name" id="tab2" >
+        <label class="tab_class" for="tab2">セルフ端末</label>
+        <div class="content_class">
+            <!-- <p>タブ2のコンテンツを表示します</p> -->
+
+            <!-- セルフプレビュー -->
+            <div class="row" style="margin:25px;">
+                <div class="row">
+                    <div class="col-md-12" style="padding:0;">
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/a.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">アイスクレープ</div>
+                                    <div>¥360</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/b.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">メガポテトセット</div>
+                                    <div>¥1,500</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/c.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">ナゲット生ビールセット</div>
+                                    <div>¥900</div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+
+                    <div class="col-md-12" style="padding:0;">
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/a.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">アイスクレープ</div>
+                                    <div>¥360</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/b.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">メガポテトセット</div>
+                                    <div>¥1,500</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/c.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">ナゲット生ビールセット</div>
+                                    <div>¥900</div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+
+                    <div class="col-md-12" style="padding:0;">
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/a.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">アイスクレープ</div>
+                                    <div>¥360</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/b.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">メガポテトセット</div>
+                                    <div>¥1,500</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+                            <div class="preview-box">
+                                <div class="input-group input-group-sm p-img preview">
+                                    <img src="{{ asset('sample-img/c.jpg') }}" alt="画像1" style="width:130px;">
+                                </div>
+                                <div class="preview-info-self">
+                                    <div style="margin-top:5px;">ナゲット生ビールセット</div>
+                                    <div>¥900</div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+        
+            
+  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

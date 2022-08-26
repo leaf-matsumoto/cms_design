@@ -173,20 +173,21 @@ class SingleMenuController extends AdminController
         $form = new Form(new SingleMenu());
 
         $form->text('theater_name', '劇場名')->disable();
+        $form->text('menu_code', '劇場運用反映コード')->disable();
         $form->text('menu_code', '商品コード')->disable();
         $form->text('menu_type', '商品分類')->disable();
         $form->text('basic_menu_name', '基本商品名')->disable();
         $form->text('receipt_menu_name', '商品レシート名')->disable();
 
-        // $form->text('menu_code', '商品コード');
-        // $form->text('menu_type', '商品分類');
-        // $form->text('basic_menu_name', '基本商品名');
-        // $form->text('receipt_menu_name', '商品レシート名');
-
-
-        $form->text('order_menu_name', 'オーダー管理名');
-        $form->text('menu_name', '表示名');
+        $form->text('sample0', 'オーダー管理名')->placeholder('オーダー管理名');
+        $form->text('sample1', 'オーダー管理グループ名')->placeholder('オーダー管理グループ名');
+        $form->text('sample2', 'オーダー管理グループサブ名')->placeholder('オーダー管理グループサブ名');
+        $form->text('sample3', '商品グループ表示名')->placeholder('商品グループ表示名');
+        $form->text('sample4', '商品グループサブ表示名')->placeholder('商品グループサブ表示名');
+        $form->text('menu_name', '商品表示名');
         $form->currency('menu_price', '商品単価')->symbol('￥')->digits(0)->disable();
+
+        $form->number('sample', '購入制限数')->placeholder('半角数値');
 
         // $form->currency('menu_price', '商品単価')->symbol('￥')->digits(0);
 
@@ -194,12 +195,28 @@ class SingleMenuController extends AdminController
         $form->radio('self', 'セルフレジ')->options([
             '販売可'=>'販売可' , '販売不可'=>'販売不可' , '販売停止'=>'販売停止' , '売り切れ'=>'売り切れ'
         ]);
+
         $form->radio('mobile', 'モバイルオーダー')->options([
             '販売可'=>'販売可' , '販売不可'=>'販売不可' , '販売停止'=>'販売停止' , '売り切れ'=>'売り切れ'
         ]);
+
+        $form->radio('sample5', 'グループ運用カテゴリ')->options([
+            '0'=>'未設定' , '1'=>'温度' , '2'=>'サイズ' , '3'=>'味'
+        ])->disable();
+
         $form->select('menu_class', '商品準備場所')->options([
             '選択してください' , 'フード' , 'ドリンク' , 'その他'
         ]);
+
+        // これが影響し新規登録ができない？
+        $form->checkbox('theater_name', '在庫フラグ')->options([1 => ' '])->disable();
+
+        // これが影響し新規登録ができない？
+        $form->checkbox('theater_name', 'アルコールフラグ')->options([1 => ' ']);
+
+        // これが影響し新規登録ができない？
+        $form->checkbox('sample6', '単品販売不可フラグ')->options([1 => ' '])->disable();
+
         // これが影響し新規登録ができない？
         $form->checkbox('theater_name', '期間限定')->options([1 => ' ']);
 
@@ -217,7 +234,6 @@ class SingleMenuController extends AdminController
             $tools->disableDelete();
             // 管理ボタンを非表示
             $tools->disableList();
-
         });
 
         $form->footer(function ($footer) {

@@ -329,3 +329,86 @@ table {
 .ItemBox-CheckBox-Input:checked + .ItemBox-CheckBox-Label:before{
     left: 25px;
 }
+
+
+/* タブ */
+.area {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+  }
+   
+  .tab_class {
+    width: calc(100%/2);
+    height: 50px;
+    background-color: darkgrey;
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
+  }
+   
+  input[name="tab_name"] {
+    display: none;
+  }
+   
+  input:checked + .tab_class {
+    background-color: #fff;
+    /* color: aliceblue; */
+  }
+   
+  .content_class {
+    display: none;
+    width: 100%;
+  }
+   
+  input:checked + .tab_class + .content_class {
+    display: block;
+  }
+
+
+  /* プレビュー内(モバイル) */
+
+  .preview-box{
+    border:1px solid #dcdcdc!important;
+    box-shadow: 2px 2px 4px #dcdcdc;
+    border-radius: 5px;
+    /* margin-bottom:20px; */
+    /* height:250px; */
+  }
+
+  .preview{
+    margin-top:25px;
+    margin-left:8px;
+  }
+
+  .preview-info{
+    height:70px;
+    margin-left:8px;
+    margin-top:10px;
+  }
+
+  /* プレビュー内(セルフ) */
+
+  .preview-box{
+    border:1px solid #dcdcdc!important;
+    box-shadow: 2px 2px 4px #dcdcdc;
+    border-radius: 5px;
+    /* margin-bottom:20px; */
+    /* height:250px; */
+  }
+
+  .preview{
+    margin-top:25px;
+    margin-left:5px;
+  }
+
+  .preview-info-self{
+    font-size:12px;
+    height:55px;
+    margin-left:5px;
+    margin-top:5px;
+  }
