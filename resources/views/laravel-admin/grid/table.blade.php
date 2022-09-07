@@ -55,7 +55,28 @@
             
             @if ( $grid->showTools() )
             <div class="pull-left">
+                <!-- 検索フィルタ表示切替部分 -->
                 {!! $grid->renderHeaderTools() !!}
+
+
+
+                <!-- 未設定項目の表示切替 -->
+                @if(\Request::is('admin/single-menus') || \Request::is('admin/set-menus'))
+                    <div class="ItemBox pull-right" style="margin-top:14px;margin-left:15px;">
+                        <!-- 1アイテム -->
+                        <div class="ItemBox-CheckBox">
+                            <!-- 項目の名前 -->
+                            <div class="ItemBox-CheckBox-Title">未設定のみを表示</div>
+                            <!-- 任意のidを指定する -->
+                            <input type="checkbox" id="FollowNoticeSetting" class="ItemBox-CheckBox-Input">
+                            <!-- inputで指定したidをfor属性値に指定する -->
+                            <label for="FollowNoticeSetting" class="ItemBox-CheckBox-Label"></label>
+                        </div>
+                    </div>
+                @endif
+
+
+
 
                 @if(\Request::is('admin/order-mgts'))
                     <span class="radio-g">

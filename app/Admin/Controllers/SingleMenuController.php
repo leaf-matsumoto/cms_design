@@ -36,6 +36,10 @@ class SingleMenuController extends AdminController
         $grid->column('menu_price', '商品単価')->sortable();
         $grid->column('self', 'セルフレジ')->sortable();
         $grid->column('mobile', 'モバイルオーダー')->sortable();
+        $grid->column('status', 'ステータス')->icon([
+            0 => 'exclamation-circle',
+            1 => '',
+        ], $default = '')->color('#ff0000')->sortable();
 
         // アクション（操作）一括非表示　※最終非表示
         $grid->disableActions();
