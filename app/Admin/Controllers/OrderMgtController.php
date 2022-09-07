@@ -110,7 +110,7 @@ class OrderMgtController extends AdminController
 
         // $show->field('id', __('Id'));
         $show->field('member_id', '会員ID');
-        $show->field('order_day', '注文日時');
+        // $show->field('order_day', '注文日時');
         $show->field('receipt_num', 'レシートNo');
         $show->field('order_content', '注文内容');
         // $show->field('order_status', 'オーダーステータス');
@@ -118,7 +118,7 @@ class OrderMgtController extends AdminController
         $show->field('pay_kinds', '決済種別'); //追加必要
         $show->field('order_situation', '注文状況');
         $show->field('order_kinds', '販売区分');
-        $show->field('call_num', '呼出し番号');
+        $show->field('call_num', '呼出番号');
         $show->field('tentative_order', '仮オーダー日時');
         $show->field('product_order', '本オーダー日時');
         $show->field('menu_day', '準備日時');

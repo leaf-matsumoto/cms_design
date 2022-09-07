@@ -5,18 +5,19 @@
         <!-- 各ページのタイトルを表示 -->
         <h1>
         @if(\Request::is('admin/masters/create') || \Request::is('admin/master2s/create') || \Request::is('admin/master3s/create'))
-            マスター同期                            
+            <!-- 商品マスター同期 -->
+            コンセクーポン同期
         @endif
         @if(\Request::is('admin/single-menus'))
             単品商品管理                            
         @endif
-        @if(\Request::is('admin/single-menus/*/edit'))
+        @if(\Request::is('admin/single-menus/*/edit') || \Request::is('admin/single-menus/create'))
             単品商品編集                            
         @endif
         @if(\Request::is('admin/set-menus'))
             セット構成管理                            
         @endif
-        @if(\Request::is('admin/set-menus/*/edit'))
+        @if(\Request::is('admin/set-menus/*/edit') || \Request::is('admin/set-menus/create'))
             セット構成編集                            
         @endif
         @if(\Request::is('admin/allergies/create'))

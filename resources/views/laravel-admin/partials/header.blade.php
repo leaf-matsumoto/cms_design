@@ -2,22 +2,30 @@
 <header class="main-header">
 
     <!-- Logo -->
-    <a href="{{ admin_url('/') }}" class="logo">
+    <a href="{{ admin_url('/') }}" class="logo" style="background-color:#696969;">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">{!! config('admin.logo-mini', config('admin.name')) !!}</span>
+        <!-- <span class="logo-mini">{!! config('admin.logo-mini', config('admin.name')) !!}</span> -->
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">{!! config('admin.logo', config('admin.name')) !!}</span>
+        <!-- <span class="logo-lg">{!! config('admin.logo', config('admin.name')) !!}</span> -->
+        <span class="logo-lg" style="font-size:15px;text-align:left;">メニュー</span>
     </a>
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
         <!-- Sidebar toggle button-->
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <!-- <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
-        </a>
-        <ul class="nav navbar-nav hidden-sm visible-lg-block">
+        </a> -->
+
+        <!-- <ul class="nav navbar-nav hidden-sm visible-lg-block">
         {!! Admin::getNavbar()->render('left') !!}
-        </ul>
+        </ul> -->
+
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" style="padding:11px;font-size:19px;font-weight:bold;>
+            <span class="sr-onl" style="">&nbsp;&nbsp;コンセオーダーCMS</span>
+        </a>
+        
+
 
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">

@@ -36,7 +36,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>T</b>',
+    'logo-mini' => '<b>CMS</b>',
     // 'logo-mini' => '<b>La</b>',
 
     /*

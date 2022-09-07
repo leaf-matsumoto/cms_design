@@ -4,7 +4,7 @@
     <section class="sidebar">
 
         <!-- Sidebar user panel (optional) -->
-        <div class="user-panel">
+        <!-- <div class="user-panel"> -->
             <!-- <div class="pull-left image"> -->
                 <!-- <img src="{{ Admin::user()->avatar }}" class="img-circle" alt="User Image"> -->
             <!-- </div> -->
@@ -13,11 +13,11 @@
                 <!-- Status -->
                 <!-- <a href="#"><i class="fa fa-circle text-success"></i> {{ trans('admin.online') }}</a>
             </div> -->
-        </div>
+        <!-- </div> -->
 
         @if(config('admin.enable_menu_search'))
-        <!-- search form (Optional) -->
-        <form class="sidebar-form" style="overflow: initial;" onsubmit="return false;">
+        <!-- search form (Optional) サイドメニュー検索ボックス -->
+        <!-- <form class="sidebar-form" style="overflow: initial;" onsubmit="return false;">
             <div class="input-group">
                 <input type="text" autocomplete="off" class="form-control autocomplete" placeholder="メニュー内検索">
               <span class="input-group-btn">
@@ -32,13 +32,13 @@
                     @endforeach
                 </ul>
             </div>
-        </form>
+        </form> -->
         <!-- /.search form -->
         @endif
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li class="header">{{ trans('admin.menu') }}</li>
+            <!-- <li class="header">{{ trans('admin.menu') }}</li> -->
 
             @each('admin::partials.menu', Admin::menu(), 'item')
 

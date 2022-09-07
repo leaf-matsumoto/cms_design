@@ -2,18 +2,19 @@
 @include('admin::add.modal_01')
 
 <div class="box grid-box">
+    
     @if(isset($title))
     <div class="box-header with-border">
         <h3 class="box-title"> {{ $title }}</h3>
     </div>
     @endif
 
+
     <!-- おすすめ商品/クーポン管理の時 -->
     @if(!\Request::is('admin/pickups'))
 
         @if ( $grid->showTools() || $grid->showExportBtn() || $grid->showCreateBtn() )
         <div class="box-header with-border">
-
 
         
   
@@ -44,9 +45,6 @@
                         </div>
                     </div>
                 @endif
-
-
-
 
 
             <div class="pull-right">

@@ -60,7 +60,7 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-        <div class="col-xs-8">
+        <!-- <div class="col-xs-8">
           @if(config('admin.auth.remember'))
           <div class="checkbox icheck">
             <label>
@@ -69,9 +69,9 @@
             </label>
           </div>
           @endif
-        </div>
+        </div> -->
         <!-- /.col -->
-        <div class="col-xs-4">
+        <div class="col-xs-12">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <button type="submit" class="btn btn-primary btn-block btn-flat">{{ trans('admin.login') }}</button>
         </div>

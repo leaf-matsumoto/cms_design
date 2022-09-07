@@ -67,9 +67,9 @@ class NewContentController extends AdminController
     {
         $form = new Form(new NewContent());
 
-        $form->select('theater_name', __('劇場選択'))->options([
-            ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
-        ]);
+        // $form->select('theater_name', __('劇場選択'))->options([
+        //     ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
+        // ]);
 
         $form->date('start_day', __('掲載開始日'))->format('YYYY-MM-DD')->placeholder('掲載開始日')->setWidth(2, 2);
         $form->text('start_time', __('掲載開始時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);

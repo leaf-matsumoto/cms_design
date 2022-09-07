@@ -11,7 +11,8 @@
                 <div class="box-header with-border" style="border:none;">
                     @include('admin::add.calender_search')
                 </div>
-                
+
+
                 <form action="http://localhost/admin/mobile-calendar" method="post" class="form-horizontal model-form-62d0ff2060be7" accept-charset="UTF-8" pjax-container="">
 
                     <div class="box-body">
@@ -19,7 +20,7 @@
                         <!-- HTML形式でのカレンダー -->                                
                         <div class="container calender" style="float:left;margin-left:5%;width:80%;">
                             <h3 class="mb-5" style="margin-bottom:20px;">
-                                <a href="#" style="background-color:#111;padding:3px 10px;color:#fff;border-top-left-radius:5px;border-bottom-left-radius:5px;font-size:15px;">&lt;</a>
+                                <a href="#" style="pointer-events:none;background-color:#111;padding:3px 10px;color:#fff;border-top-left-radius:5px;border-bottom-left-radius:5px;font-size:15px;">&lt;</a>
                                 <a href="#" style="background-color:#111;padding:3px 10px;color:#fff;border-top-right-radius:5px;border-bottom-right-radius:5px;font-size:15px;">&gt;</a>
                                 <a href="" class="btn-alert" style="background-color:#808080;padding:3px 10px;color:#fff;border-radius:5px;font-size:15px;">today</a>
                                 <span style="margin-left:20px;">&nbsp;2022年 7月&nbsp;</span>
@@ -51,7 +52,7 @@
                                     <td>14<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>15<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td class="today">16<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-                                    <td>17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td style="background-color:#ffffe0;">17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>18<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td class="sat">19<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                 </tr>
@@ -80,6 +81,7 @@
                 </form>
 
 
+
                 <!-- TOP画面登録ボタン --------------------------- -->
 
                 <div class="box-footer">
@@ -106,13 +108,7 @@
                     </div>
                 </div>
 
-                <!-- --------------------------- -->
-
-
-
-
-
-                
+                <!-- --------------------------- -->     
 
 <!-- 
     <style>

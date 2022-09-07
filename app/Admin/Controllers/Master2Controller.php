@@ -57,9 +57,9 @@ class Master2Controller extends AdminController
         
         // $form->text('sample01', __('Sample01'));
         // $form->text('sample02', __('Sample02'));
-        $form->setWidth(3, 2)->select('menu_class', '劇場選択')->options([
-            '' , 'フード' , 'ドリンク' , 'その他'
-        ]);
+        // $form->setWidth(3, 2)->select('menu_class', '劇場選択')->options([
+        //     '' , 'フード' , 'ドリンク' , 'その他'
+        // ]);
 
         $form->tools(function (Form\Tools $tools) {
             // 右上の表示ボタンを非表示

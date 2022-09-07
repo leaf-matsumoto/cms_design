@@ -153,72 +153,73 @@ class SetMenuController extends AdminController
     {
         $form = new Form(new SetMenu());
 
-        $form->text('theater_name', '劇場名')->disable()->placeholder('＊');
-        $form->text('menu_code', '劇場運用反映コード')->disable()->placeholder('＊');;
-        $form->text('', 'セット順番号')->disable()->placeholder('＊');;
-        $form->text('', '連番')->disable()->placeholder('＊');;
-        $form->text('menu_code', '商品コード')->disable()->placeholder('＊');;
-        $form->text('menu_type', '商品分類')->disable()->placeholder('＊');;
-        $form->text('basic_menu_name', '基本商品名')->disable()->placeholder('＊');;
-        $form->text('receipt_menu_name', '商品レシート名')->disable()->placeholder('＊');;
-
-        // $form->text('menu_code', '商品コード');
-        // $form->text('menu_type', '商品分類');
-        // $form->text('basic_menu_name', '基本商品名');
-        // $form->text('receipt_menu_name', '商品レシート名');
-
-        $form->text('order_menu_name', 'オーダー管理名');
-
-        $form->text('sample1', 'オーダー管理グループ名')->placeholder('オーダー管理グループ名');
-        $form->text('sample2', 'オーダー管理グループサブ名')->placeholder('オーダー管理グループサブ名');
-        $form->text('sample3', '商品グループ表示名')->placeholder('商品グループ表示名');
-        $form->text('sample4', '商品グループサブ表示名')->placeholder('商品グループサブ表示名');
-
-        $form->text('p_menu_name', '商品表示名');
+        $form->text('theater_name', '劇場名')->icon('fa-video-camera')->disable()->value('梅田ブルク7');
+        $form->text('menu_type', '劇場運用反映コード')->icon('fa-video-camera')->setWidth(2, 2)->disable()->value('')->value('A100000000');
+        $form->text('menu_code', '商品コード')->icon('fa fa-barcode')->setWidth(2, 2)->disable()->value('A200000100');
+        $form->text('receipt_menu_name', '商品レシート名')->disable()->value('POPセット塩')->icon('fa fa-coffee');
+        $form->text('basic_menu_name', '基本商品名')->disable()->value('POPセット塩')->icon('fa fa-coffee');
+        $form->text('shouhinbunrui', '商品分類')->disable()->value('セット')->icon('fa fa-coffee');
+        $form->text('menu_code', '商品単価')->setWidth(2, 2)->disable()->icon('fa fa-jpy')->value('800');       
+        $form->text('setjunn', 'セット順番号')->setWidth(2, 2)->disable()->icon('fa fa-minus')->value('1');
+        $form->text('menu_code', '連番')->setWidth(2, 2)->disable()->icon('fa fa-minus')->value('1');
+        $form->checkbox('menu_type', '在庫フラグ')->options([
+            1 => ' '
+        ])->disable();
         // 小商品１
-        $form->textarea('c_menu_name', __('子商品 ①'))->rows(2)->placeholder('小商品情報を表示')->disable();
+        $form->select('setunnyoukategori', 'セット運用カテゴリー ①')->options([
+            '0'=>'選択してください' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
+        ])->setWidth(3, 2);
+        $form->textarea('c_menu_name', __('子商品情報 ①'))->rows(2)->placeholder('小商品情報を表示')->disable()->value(
+            "A000000110&nbsp;&nbsp;ペプシ\nA000000210&nbsp;&nbsp;ペプシゼロ\nA000000310&nbsp;&nbsp;メロンソーダ"
+        );
         // 小商品２
+        $form->select('setunnyoukategori', 'セット運用カテゴリー ②')->options([
+            '0'=>'選択してください' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
+        ])->setWidth(3, 2);
         $form->textarea('c_menu_name', __('子商品 ②'))->rows(2)->placeholder('小商品情報を表示')->disable();
         // 小商品３
+        $form->select('setunnyoukategori', 'セット運用カテゴリー ③')->options([
+            '0'=>'選択してください' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
+        ])->setWidth(3, 2);
         $form->textarea('c_menu_name', __('子商品 ③'))->rows(2)->placeholder('小商品情報を表示')->disable();
-        $form->currency('menu_price', '商品単価')->symbol('￥')->digits(0)->disable();
 
-        $form->number('sample', '購入制限数')->placeholder('半角数値');
-
-        // $form->currency('menu_price', '商品単価')->symbol('￥')->digits(0);
+        $form->text('basic_menu_name', 'オーダー管理名')->required()->placeholder('オーダー管理名')->icon('fa fa-shopping-basket');
+        $form->text('basic_menu_name', 'オーダー管理グループ名')->required()->placeholder('オーダー管理グループ名')->icon('fa fa-shopping-basket');
+        $form->text('basic_menu_name', 'オーダー管理グループサブ表示名')->required()->placeholder('オーダー管理グループサブ表示名')->icon('fa fa-shopping-basket');
+        $form->text('basic_menu_name', '商品表示名')->required()->placeholder('商品表示名')->icon('fa fa-coffee');
+        $form->text('basic_menu_name', '商品グループ表示名')->required()->placeholder('商品グループ表示名')->icon('fa fa-coffee');
+        $form->text('basic_menu_name', '商品グループサブ表示名')->required()->placeholder('商品グループサブ表示名')->icon('fa fa-coffee');
+        $form->text('kounyuuseigennsuu', '購入制限数')->setWidth(2, 2)->required()->placeholder('購入で制限数')->icon('fa fa-hand-stop-o');
         
-        // 'データベースに書き込む値' =>'選択肢に表示される値'　※アローを使わない場合は数値が書き込まれる
-        $form->radio('self', 'セルフレジ')->options([
-            '販売可'=>'販売可' , '販売不可'=>'販売不可' , '販売停止'=>'販売停止' , '売り切れ'=>'売り切れ'
-        ]);
+        $form->checkbox('kikanngenntei', '期間限定')->options([
+            1 => ' '
+        ])->required();
+        // $form->dateRange('kaisibi', 'shuuryoubi', '販売期間')->required();
 
-        $form->radio('mobile', 'モバイルオーダー')->options([
-            '販売可'=>'販売可' , '販売不可'=>'販売不可' , '販売停止'=>'販売停止' , '売り切れ'=>'売り切れ'
-        ]);
+        $form->date('kaisibi', '販売開始日')->required()->placeholder('開始日');
+        $form->date('shuuryoubi', '販売終了日')->required()->placeholder('終了日');
+
+        $form->select('shouhinnjunbibasho', '商品準備場所')->options([
+            0 => '選択してください', 1 => 'フード', '2' => 'セット', '3' => 'オプション'
+        ])->setWidth(3, 2);
+
+
         
+        $form->radio('mobileorder', 'モバイルオーダー')->options([
+            '0'=>'販売可' , '1'=>'販売不可' , '2'=>'販売停止' , '3'=>'売り切れ'
+        ])->default('1');
+        $form->radio('selforder', 'セルフオーダー')->options([
+            '0'=>'販売可' , '1'=>'販売不可' , '2'=>'販売停止' , '3'=>'売り切れ'
+        ])->default('1');
 
-        $form->select('menu_class', 'セット運用カテゴリー')->options([
-            '0'=>'フード種別' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
+
+
+        $form->checkbox('aruko-ru', 'アルコール')->options([
+            1 => ' '
         ]);
 
-        $form->select('menu_class', '商品準備場所')->options([
-            '選択してください' , 'フード' , 'ドリンク' , 'その他'
-        ]);
+        $form->file('shouhingazou', '商品画像')->setWidth(3, 2);;
 
-        // これが影響し新規登録ができない？
-        $form->checkbox('theater_name', '在庫フラグ')->options([1 => ' '])->disable();
-
-        // これが影響し新規登録ができない？
-        $form->checkbox('theater_name', 'アルコールフラグ')->options([1 => ' ']);
-
-        // これが影響し新規登録ができない？
-        $form->checkbox('theater_name', '期間限定')->options([1 => ' ']);
-        
-        $form->date('start_sale', '販売開始日')->placeholder('＊');;
-        $form->date('end_sale', '販売終了日')->placeholder('＊');;
-        $form->image('menu_img','商品画像');
-
-        // 商品説明
         $form->textarea('c_menu_name', __('商品説明'))->rows(3)->placeholder('商品の説明を入力');
 
         $form->tools(function (Form\Tools $tools) {

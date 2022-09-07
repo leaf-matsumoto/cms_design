@@ -61,9 +61,9 @@ class MailController extends AdminController
 
         $form = new Form(new Mail());
 
-        $form->select('theater_name', __('劇場選択'))->options([
-            ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
-        ]);
+        // $form->select('theater_name', __('劇場選択'))->options([
+        //     ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
+        // ]);
 
         // $form->textarea('header_mail', 'ヘッダー')->rows(5);
         $form->textarea('main_mail', '差込文章')->rows(10)->placeholder('差込文章を入力');
