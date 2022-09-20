@@ -66,10 +66,6 @@ class PurchasePapersController extends AdminController
         // $form->text('theater_name', __('Theater name'));
         // $form->text('order_info', __('Order info'));
 
-        // $form->select('theater_name', __('劇場選択'))->options([
-        //     ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
-        // ]);
-
         $form->textarea('order_info', __('注意書き'))->rows(10);
 
         $form->tools(function (Form\Tools $tools) {

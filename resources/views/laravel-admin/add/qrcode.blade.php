@@ -8,7 +8,7 @@
         <tr style="height:35px;">
             <td>最終更新日時</td>
             <td>&nbsp;：&nbsp;</td>
-            <td>2022/08/01</td>
+            <td>2022/08/01&nbsp;20:30</td>
         </tr>
     </table>
 </div>

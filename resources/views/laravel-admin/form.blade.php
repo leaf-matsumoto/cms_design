@@ -29,10 +29,48 @@
             <div class="fields-group">
 
                 <!-- コンセ完了メール管理/オーダー用紙管理の条件分岐 -->
-                @if(\Request::is('admin/mails/create') || \Request::is('admin/purchase-papers/create') || \Request::is('admin/new-contents/create') || \Request::is('admin/qrcodes/create'))
+                @if(\Request::is('admin/mails/create') || \Request::is('admin/new-contents/create') || \Request::is('admin/qrcodes/create'))
                         <div class="col-md-12"  style="border-bottom: 1px solid #d2d6de;padding-top:30px;padding-bottom:50px;margin-bottom:50px;">
                             <div class="form-group  ">
                                 <label for="theater_name" class="col-sm-2  control-label">劇場選択</label>
+                                <div class="col-sm-8">
+                                    <input type="hidden" name="theater_name">
+                                    <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
+                                    <option value=""></option>
+                                        <option value="T・ジョイ新潟万代">T・ジョイ新潟万代</option>
+                                        <option value="T・ジョイ長岡">T・ジョイ長岡</option>
+                                        <option value="新宿バルト9">新宿バルト9</option>
+                                        <option value="T・ジョイSEIBU大泉">T・ジョイSEIBU大泉</option>
+                                        <option value="T・ジョイPRINCE品川">T・ジョイPRINCE品川</option>
+                                    </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9u-container"><span class="select2-selection__rendered" id="select2-theater_name-9u-container"><span class="select2-selection__placeholder">劇場選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>        
+                                </div>
+                            </div>
+                        </div>
+                @endif
+
+
+                <!-- コンセ完了メール管理/オーダー用紙管理の条件分岐 -->
+                @if(\Request::is('admin/purchase-papers/create'))
+                        <div class="col-md-12"  style="padding-top:30px;margin-bottom:50px;">
+                            <div class="form-group  ">
+                                <label for="theater_name" class="col-sm-2  control-label">劇場選択</label>
+                                <div class="col-sm-8">
+                                    <input type="hidden" name="theater_name">
+                                    <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
+                                    <option value=""></option>
+                                        <option value="T・ジョイ新潟万代">T・ジョイ新潟万代</option>
+                                        <option value="T・ジョイ長岡">T・ジョイ長岡</option>
+                                        <option value="新宿バルト9">新宿バルト9</option>
+                                        <option value="T・ジョイSEIBU大泉">T・ジョイSEIBU大泉</option>
+                                        <option value="T・ジョイPRINCE品川">T・ジョイPRINCE品川</option>
+                                    </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9u-container"><span class="select2-selection__rendered" id="select2-theater_name-9u-container"><span class="select2-selection__placeholder">劇場選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12"  style="border-bottom: 1px solid #d2d6de;padding-bottom:50px;margin-bottom:50px;">
+                            <div class="form-group  ">
+                                <label for="theater_name" class="col-sm-2  control-label">販売エリア</label>
                                 <div class="col-sm-8">
                                     <input type="hidden" name="theater_name">
                                     <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
@@ -61,6 +99,16 @@
                             @endforeach
                         <!-- </div> -->
                     @endforeach
+
+                        <!-- 単品商品編集の条件分岐 -->
+                        @if(\Request::is('admin/single-menus/create'))
+                            @include('admin::add.single_menu')
+                        @endif
+
+                        <!-- セット構成編集の条件分岐 -->
+                        @if(\Request::is('admin/set-menus/create'))
+                            @include('admin::add.set_menu')
+                        @endif
 
                         <!-- マスター同期画面の条件分岐 -->
                         @if(\Request::is('admin/masters/create'))
@@ -112,7 +160,7 @@
 
     <!-- /.box-body -->
     <!-- マスター同期画面の条件分岐(非表示) -->
-    @if(!\Request::is('admin/masters/create') && !\Request::is('admin/master2s/create') && !\Request::is('admin/master3s/create'))
+    @if(!\Request::is('admin/masters/create') && !\Request::is('admin/master2s/create') && !\Request::is('admin/master3s/create') && !\Request::is('admin/set-menus/create') && !\Request::is('admin/single-menus/create'))
 
         {!! $form->renderFooter() !!}
 

@@ -19,7 +19,21 @@
                 </div>
             </div>
 
+            <!-- 表示切替 -->
+            <div class="fields-group">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <div class="input-group" style="display: inline-block; margin-top:35px;width: 100%">
+                                <input type="radio" name="mobile" value="" style="margin-left:5px;margin-right:4px;transform: scale(1.2);" checked>モバイルオーダーに表示する
+                                <input type="radio" name="mobile" value="" style="margin-left:20px;margin-right:4px;transform: scale(1.2);">モバイルオーダーに表示しない
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 検索ボックス -->
             <div class="fields-group">
                 <div class="col-md-12">
                     <div class="form-group">
@@ -34,30 +48,7 @@
                     </div>
                 </div>
 
-                <!-- 表示切替 -->
-                <div class="fields-group">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <div class="col-sm-4">
-                                <div class="input-group" style="display: inline-block; margin-top:35px;width: 100%">
 
-                                    <div class="ItemBox">
-                                        <!-- 1アイテム -->
-                                        <div class="ItemBox-CheckBox">
-                                            <!-- 項目の名前 -->
-                                            <div class="ItemBox-CheckBox-Title">モバイルオーダー表示切替</div>
-                                            <!-- 任意のidを指定する -->
-                                            <input type="checkbox" id="FollowNoticeSetting" class="ItemBox-CheckBox-Input">
-                                            <!-- inputで指定したidをfor属性値に指定する -->
-                                            <label for="FollowNoticeSetting" class="ItemBox-CheckBox-Label"></label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
 

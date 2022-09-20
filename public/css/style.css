@@ -437,3 +437,48 @@ textarea {
   /* .select2-container .select2-selection--single{
     width:374px;
   } */
+
+
+
+
+/* KINEZO合わせ */
+  .col-sm-2, .col-sm-1 {
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 12px;
+  }
+
+  .skin-blue-light .sidebar-menu > li > a {
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .sidebar-menu .treeview-menu > li > a {
+    font-size: 12px;
+  }
+
+  .form-horizontal .control-label {
+    text-align: left;
+  }
+
+  table {
+    font-size:12px;
+    font-weight: 100;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  form label.down {
+    margin-top: 8px!important;
+}
+
+ {
+    border: 3px green solid;
+}
