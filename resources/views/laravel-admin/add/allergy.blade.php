@@ -70,7 +70,7 @@
         <thead class="allergy-title">
             <tr>
                 <th></th>
-                <th>品名</th>
+                <th>商品名</th>
                 <th>卵</th>
                 <th>乳</th>
                 <th>小麦</th>

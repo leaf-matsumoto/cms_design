@@ -266,7 +266,7 @@
 
                 <div class="form-group  1">
                 <!-- <label for="kikanngenntei" class="col-sm-2">期間限定</label> -->
-                <label for="kikanngenntei" class="col-sm-2">期間限定を指定する</label>
+                <label for="kikanngenntei" class="col-sm-2">限定商品アイコン表示</label>
                     <div class="col-sm-8" id="menu_type">
                         <input class="" type="checkbox" name="" value="" style="transform: scale(1.3);margin-left:5px;">
                     </div>
@@ -310,48 +310,6 @@
 
             <div class="form-group col-sm-10" style="background-color:#696969;color:#fff;font-weight:bold;padding:10px 10px;margin-top:30px;""><i class="fa fa-chevron-up"></i>&nbsp;&nbsp;詳細設定</div>
 
-
-                <div class="form-group  ">
-                    <!-- <label for="kounyuuseigennsuu" class="col-sm-2">購入制限数</label> -->
-                    <label for="kounyuuseigennsuu" class="col-sm-2 down">購入制限</label>
-                    <div class="col-sm-2">
-                        <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa fa-hand-stop-o fa-fw"></i></span>
-                            <input required="1" type="text" id="kounyuuseigennsuu" name="kounyuuseigennsuu" value="" class="form-control kounyuuseigennsuu" placeholder="購入で制限数">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="kaisibi" class="col-sm-1 down">販売期間を指定する</label>
-                    <label for="kaisibi" class="col-sm-1 down">
-                        <input class="" type="checkbox" name="" value="" style="transform: scale(1.3);margin-left:5px">
-                    </label>
-                    <div class="col-sm-2">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
-                            <input required="1" style="width:100%;" type="text" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="開始日">
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
-                            <input required="1" style="width:100%;" type="text" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="終了日">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <!-- <label for="kounyuuseigennsuu" class="col-sm-2">購入制限数</label> -->
-                    <label for="kounyuuseigennsuu" class="col-sm-2 down">購入制限</label>
-                    <div class="col-sm-2">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa fa-hand-stop-o fa-fw"></i></span>
-                            <input required="1" type="text" id="kounyuuseigennsuu" name="kounyuuseigennsuu" value="" class="form-control kounyuuseigennsuu" placeholder="購入で制限数">
-                        </div>
-                    </div>
-                </div>
-
                 <div class="form-group">
                     <label for="mobileorder" class="col-sm-2">モバイルオーダー</label>
                     <div class="col-sm-8">
@@ -378,6 +336,38 @@
                 <div class="col-sm-8" id="menu_type">
                     <input class="" type="checkbox" name="" value="" style="margin-left:5px;margin-right:4px;transform: scale(1.2);">８階
                     <input class="" type="checkbox" name="" value="" style="margin-left:10px;margin-right:4px;transform: scale(1.2);">９階
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kaisibi" class="col-sm-1 down">購入制限</label>
+                <label for="kaisibi" class="col-sm-1 down">
+                    <input class="" type="checkbox" name="" value="" style="transform: scale(1.3);margin-left:5px">
+                </label>
+                <div class="col-sm-2">
+                    <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa fa-hand-stop-o fa-fw"></i></span>
+                        <input required="1" type="text" id="kounyuuseigennsuu" name="kounyuuseigennsuu" value="" class="form-control kounyuuseigennsuu" placeholder="購入制限数を入力する">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kaisibi" class="col-sm-1 down">販売期間を指定する</label>
+                <label for="kaisibi" class="col-sm-1 down">
+                    <input class="" type="checkbox" name="" value="" style="transform: scale(1.3);margin-left:5px">
+                </label>
+                <div class="col-sm-2">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+                        <input required="1" style="width:100%;" type="text" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="開始日">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+                        <input required="1" style="width:100%;" type="text" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="終了日">
+                    </div>
                 </div>
             </div>
 
