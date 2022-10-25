@@ -32,14 +32,14 @@
                                 <tr>
                                     <td></td>
                                     <td></td>
-                                    <td>1<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td>1<div style="color:#111;text-align:center;margin:20px auto;height:25px;">10:00 - 24:30</div></td>
                                     <td>2<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>3<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>4<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td class="sat">5<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                 </tr>
                                 <tr>
-                                    <td class="sun">6<div style="color:#111;text-align:center;margin:20px auto;">9:00 - 24:30</div></td>
+                                    <td class="sun">6<div style="color:#111;text-align:center;margin:20px auto;height:25px;">9:00 - 24:30</div></td>
                                     <td>7<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>8<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td>9<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
@@ -49,15 +49,15 @@
                                 </tr>
                                 <tr>
                                     <td class="sun">13<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-                                    <td>14<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td>14<div style="color:#111;text-align:center;margin:20px auto;height:25px;">10:00 - 24:30</div></td>
                                     <td>15<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td class="today">16<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
                                     <td style="background-color:#ffffe0;">17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-                                    <td>18<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+                                    <td style="background-color:#fa8072;color:#fff">18<div style="color:#111;text-align:center;auto;margin:5px auto;height:25px;color:#fff;line-height:20px;">仮登録<br>10:00 - 24:30</div></td>
                                     <td class="sat">19<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                 </tr>
                                 <tr>
-                                    <td class="sun">20<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
+                                    <td class="sun">20<div style="color:red;text-align:center;margin:20px auto;height:25px;">未登録</div></td>
                                     <td>21<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>22<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>23<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
@@ -66,7 +66,7 @@
                                     <td class="sat">26<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                 </tr>
                                 <tr>
-                                    <td class="sun">27<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
+                                    <td class="sun">27<div style="color:red;text-align:center;margin:20px auto;height:25px;">未登録</div></td>
                                     <td>28<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>29<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
                                     <td>30<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
@@ -88,7 +88,7 @@
 
                     <input type="hidden" name="_token" value="qlEA9YHtSTYJvTDg4pCO3zT9cx57VPz8NbfM4KZq">
 
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                     </div>
 
                     <div class="col-md-8" style="padding-bottom:10px;">

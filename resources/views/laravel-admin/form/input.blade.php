@@ -9,7 +9,8 @@
         <div class="input-group">
 
             @if ($prepend)
-            <span class="input-group-addon">{!! $prepend !!}</span>
+            <!-- <span class="input-group-addon">{!! $prepend !!}</span> -->
+            <span class=""></span>
             @endif
 
             <input {!! $attributes !!} />

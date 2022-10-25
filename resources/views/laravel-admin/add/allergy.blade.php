@@ -39,9 +39,9 @@
                     <div class="form-group">
                         <div class="col-sm-4">
                             <div class="input-group" style="display: inline-block; margin-top:35px;width: 100%">
-                                <input type="text" name="__search__" class="form-control grid-quick-search" style="width: 80%;" placeholder="商品名を入力">
+                                <input type="text" name="__search__" class="form-control" style="width: 80%;" placeholder="商品名を入力">
                                 <div class="input-group-btn" style="display: inline-block;">
-                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                    <button type="submit" class="btn btn-default" style="font-size:14px;"><i class="fa fa-search"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -143,9 +143,8 @@
                 <div class="form-group">
                     <label class="col-sm-1 control-label">商品追加</label>
                     <div class="col-sm-10">
-                        <div class="input-group">
-                            <div class="input-group-addon">
-                            <i class="fa fa-pencil"></i>
+                        <div class="">
+                            <div class="">
                         </div>
                         <input type="text" class="form-control id" placeholder="追加する行の名称を入力" name="id" value="">
                     </div>

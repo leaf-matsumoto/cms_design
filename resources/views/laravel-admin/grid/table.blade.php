@@ -1,4 +1,4 @@
-<!-- モーダルウィンドウ呼出し(おすすめ商品選択ダイアログに使用) -->
+<!-- モーダルウィンドウ呼出(おすすめ商品選択ダイアログに使用) -->
 @include('admin::add.modal_01')
 
 <div class="box grid-box">
@@ -81,7 +81,7 @@
                 @if(\Request::is('admin/order-mgts'))
                     <span class="radio-g">
                         <input id="radio1" class="radiobutton" name="hoge" type="radio" value="ラジオボタン1" checked="checked">
-                        <label class="radio-l radio-01" for="radio1">注文日時 で検索</label>
+                        <label class="radio-l radio-01" for="radio1">本オーダー日時 で検索</label>
                         <input id="radio2" class="radiobutton" name="hoge" type="radio" value="ラジオボタン2">
                         <label class="radio-l radio-02" for="radio2">レシートNo. で検索</label> 
                         <input id="radio3" class="radiobutton" name="hoge" type="radio" value="ラジオボタン3">

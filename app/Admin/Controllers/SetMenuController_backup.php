@@ -131,31 +131,31 @@ class SetMenuController extends AdminController
         $form = new Form(new SetMenu());
 
         $form->text('theater_name', '劇場名')->icon('fa-video-camera')->disable()->value('梅田ブルク7');
-        // $form->text('menu_type', '劇場運用反映コード')->icon('fa-video-camera')->setWidth(2, 2)->disable()->value('')->value('A100000000');
+        // $form->text('menu_type', 'セット内追加オプション')->icon('fa-video-camera')->setWidth(2, 2)->disable()->value('')->value('A100000000');
         $form->text('menu_code', '商品コード')->icon('fa fa-barcode')->setWidth(2, 2)->disable()->value('A200000100');
         $form->text('receipt_menu_name', '商品レシート名')->disable()->value('POPセット塩')->icon('fa fa-coffee');
         $form->text('basic_menu_name', '基本商品名')->disable()->value('POPセット塩')->icon('fa fa-coffee');
         $form->text('shouhinbunrui', '商品分類')->disable()->value('セット')->icon('fa fa-coffee');
         $form->text('menu_code', '商品単価')->setWidth(2, 2)->disable()->icon('fa fa-jpy')->value('800');       
-        // $form->text('setjunn', 'セット順番号')->setWidth(2, 2)->disable()->icon('fa fa-minus')->value('1');
+        // $form->text('setjunn', '子商品選択項目')->setWidth(2, 2)->disable()->icon('fa fa-minus')->value('1');
         // $form->text('menu_code', '連番')->setWidth(2, 2)->disable()->icon('fa fa-minus')->value('1');
         $form->checkbox('menu_type', '在庫フラグ')->options([
             1 => ' '
         ])->disable();
         // 小商品１
-        $form->select('setunnyoukategori', 'セット運用カテゴリー ①')->options([
+        $form->select('setunnyoukategori', '子商品カテゴリー ①')->options([
             '0'=>'選択してください' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
         ])->setWidth(3, 2);
         $form->textarea('c_menu_name', __('子商品情報 ①'))->rows(2)->placeholder('小商品情報を表示')->disable()->value(
             "A000000110&nbsp;&nbsp;ペプシ\nA000000210&nbsp;&nbsp;ペプシゼロ\nA000000310&nbsp;&nbsp;メロンソーダ"
         );
         // 小商品２
-        $form->select('setunnyoukategori', 'セット運用カテゴリー ②')->options([
+        $form->select('setunnyoukategori', '子商品カテゴリー ②')->options([
             '0'=>'選択してください' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
         ])->setWidth(3, 2);
         $form->textarea('c_menu_name', __('子商品 ②'))->rows(2)->placeholder('小商品情報を表示')->disable();
         // 小商品３
-        $form->select('setunnyoukategori', 'セット運用カテゴリー ③')->options([
+        $form->select('setunnyoukategori', '子商品カテゴリー ③')->options([
             '0'=>'選択してください' , '1'=>'ドリンク' , '2'=>'サイズ変更/商品変更' , '3'=>'フレーバー' , '4'=>'オプション' , '5'=>'特典'
         ])->setWidth(3, 2);
         $form->textarea('c_menu_name', __('子商品 ③'))->rows(2)->placeholder('小商品情報を表示')->disable();

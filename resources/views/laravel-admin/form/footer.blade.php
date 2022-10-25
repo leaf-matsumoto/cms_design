@@ -2,10 +2,22 @@
 
     {{ csrf_field() }}
 
-    <div class="col-md-{{$width['label']}}">
-    </div>
 
-    <div class="col-md-{{$width['field']}}">
+    @if(\Request::is('admin/qrcodes/create') || \Request::is('admin/mobiles/create'))
+        <div class="col-md-3">
+        </div>
+    @else
+        <div class="col-md-{{$width['label']}}">
+        </div>
+    @endif
+
+    @if(\Request::is('admin/qrcodes/create'))
+        <!-- <div class="col-md-{{$width['field']}}"> -->
+        <div class="col-md-8" style="margin-bottom:20px;width:50%;">
+    @else
+        <div class="col-md-8" style="margin-bottom:20px;">
+    @endif
+
 
         <!-- フォーム送信（登録）ボタン -->
         @if(in_array('submit', $buttons))
@@ -34,7 +46,7 @@
         <!-- QRコード設定画面 -->
         @if(\Request::is('admin/qrcodes/create'))
             @if(in_array('reset', $buttons))
-                <div class="btn-group pull-left" style="margin-right:20px;margin-top:15px;">
+                <div class="btn-group pull-left" style="padding-left:10px;">
                     <button type="reset" class="btn" style="color:#fff;background-color:#696969;">印刷</button>
                 </div>
             @endif
@@ -87,3 +99,4 @@ $(function (){
 });
 
 </script>
+

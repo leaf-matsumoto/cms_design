@@ -10,7 +10,7 @@
     </div> -->
 
     <div class="box-header with-border">
-        <div class="pull-left" style="margin-left:9%;>
+        <div class="pull-left" style="margin-left:7%;>
                 <div class="btn-group" style="margin-right: 5px" data-toggle="buttons">
             <label class="btn btn-sm btn-dropbox 62e888e05414c-filter-btn active" title="検索条件">
             <input type="checkbox"><i class="fa fa-chevron-up"></i><span class="hidden-xs">&nbsp;&nbsp;検索条件</span>
@@ -23,33 +23,32 @@
         <form action="http://localhost/admin/single-menus" class="form-horizontal" pjax-container="" method="get">
             
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-4">
                     <div class="box-body">
-                        <div class="fields-group fields-group-02">
+                        <div class="fields-group fields-group-02">                
                             <div class="form-group">
                                 <label class="col-sm-2 control-label"> 商品分類</label>
-                                <div class="col-sm-9">
+                                <div class="col-sm-9" style="width:100%;">
                                     <select class="form-control theater_name select2-hidden-accessible" name="theater_name" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                         <option></option>
                                         <option value="0">value00</option>
                                     </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-vr-container"><span class="select2-selection__rendered" id="select2-theater_name-vr-container"><span class="select2-selection__placeholder">選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>    
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="form-group form-group-02">
+                <div class="col-md-6">
+                    <div class="box-body">
+                        <div class="fields-group">                
+                            <div class="form-group">
                                 <label class="col-sm-2 control-label"> キーワード</label>
-                                <div class="col-sm-9">
-                                    <div class="input-group input-group-sm">
-                                        <div class="input-group-addon">
-                                        <i class="fa fa-pencil"></i>
-                                        </div>
-                                        <input type="text" class="form-control menu_name" placeholder="商品コードまたは商品名を入力" name="menu_name" value="">
-                                    </div>
+                                <div class="col-sm-9" style="width:100%;">
+                                    <input type="text" class="form-control menu_name" placeholder="商品コードまたは商品名を入力" name="menu_name" value="">
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -57,7 +56,7 @@
 
             <div class="box-footer">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <div class="col-md-2">
                         </div>
                         <div class="col-md-8">
@@ -74,10 +73,11 @@
 
         </form>
     </div>
+    
 
 
 
-    <table class="table table-hover grid-table" id="grid-table62cb85ed4552e" style="width:1200px;margin-left:100px;">
+    <table class="table table-hover grid-table" id="grid-table62cb85ed4552e" style="width:1100px;margin-left:100px;">
         <!-- カラム名 -->
         <thead>
             <tr>
@@ -92,6 +92,7 @@
                 <th class="column-menu_price">価格</th>
                 <th class="column-self">セルフレジ</th>
                 <th class="column-mobile">モバイルオーダー</th>
+                <th class="column-mobile">エリアセット</th>
             </tr>
         </thead>
         <tbody>
@@ -108,6 +109,7 @@
                 <td class="column-menu_price">700</td>
                 <td class="column-self">販売可</td>
                 <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
             </tr>
             <tr data-key="2">
                 <td class="column-__row_selector__">
@@ -121,6 +123,7 @@
                 <td class="column-menu_price">800</td>
                 <td class="column-self">販売可</td>
                 <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
             </tr>
             <tr data-key="3">
                 <td class="column-__row_selector__">
@@ -134,6 +137,7 @@
                 <td class="column-menu_price">800</td>
                 <td class="column-self">販売可</td>
                 <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
             </tr>
             <tr data-key="4">
                 <td class="column-__row_selector__">
@@ -147,6 +151,7 @@
                 <td class="column-menu_price">900</td>
                 <td class="column-self">販売可</td>
                 <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
             </tr>
             <tr data-key="5">
                 <td class="column-__row_selector__">
@@ -160,27 +165,28 @@
                 <td class="column-menu_price">900</td>
                 <td class="column-self">販売可</td>
                 <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
             </tr>
         </tbody>
     </table>
 
 
     <!-- ページネーション -->
-    <div class="box-footer clearfix" style="width:1200px;margin-left:100px;">
+    <div class="box-footer clearfix" style="width:1100px;margin-left:100px;">
         {!! $grid->paginator() !!}
     </div>
 
 
-    <div class="pull-right" style="margin-right:170px;padding-top:20px;">
+    <div class="pull-right" style="margin-right:120px;padding-top:20px;">
         <button type="" class="btn btn btn-success"style="">追加</button>
     </div>
     <div class="pull-right" style="margin-right:10px;padding-top:20px;">
         <button type="" class="btn btn btn-warning"style="">キャンセル</button>
     </div>
 
-
-
 </div>
+
+
 
 
 
@@ -188,15 +194,28 @@
 <!-- モーダルウィンドウ（プレビュー） -->
 <div class="modal-window-02" data-id="modal2" style="width:500px;padding:0;">
 
+
+
+
+
     <div class="" style="width:100%;height:50px;background-color:#123;text-align:right;color:#fff;font-weight:bold;padding-top:10px;padding-right:10px;">
+        <div class="form-group" style="font-size:14px;">
+            <label for="column" class="col-sm-2  control-label" style="margin-top:9px;margin-left:9px;">販売エリア</label>
+            <div class="col-sm-8" id="column" style="margin-top:6.5px;text-align:left; ">
+                    <span class="icheck">
+                        <label class="checkbox-inline">
+                            <input type="radio" name="mobile" value="" style="margin-left:5px;margin-right:4px;transform: scale(1.2);" checked="">8階
+                            <input type="radio" name="mobile" value="" style="margin-left:20px;margin-right:4px;transform: scale(1.2);">9階
+                        </label>
+                    </span>
+                <input type="hidden" name="column[]">
+            </div>
+        </div>    
         <button class="js-close button-close">×</button>
     </div>
 
 
-    <!-- 閉じるボタン -->
-    <!-- <div style="text-align:right;margin-bottom:20px;color:red;font-weight:bold;">
-        <button class="js-close button-close">×</button>
-    </div> -->
+
 
 
 

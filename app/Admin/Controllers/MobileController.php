@@ -76,7 +76,7 @@ class MobileController extends AdminController
 
 
         // $form->time('start_day', '仮オーダー有効時間');
-        $form->time('start_day', '仮オーダー有効時間( 分 )')->format('mm')->placeholder('分で値を入力');
+        $form->text('start_day', '仮オーダー有効時間( 分 )')->placeholder('分で値を入力')->setWidth(2, 2);
         // $form->text('end_day', '販売時間');
 
 

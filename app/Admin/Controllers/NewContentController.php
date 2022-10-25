@@ -71,10 +71,10 @@ class NewContentController extends AdminController
         //     ''=>'' ,'T・ジョイ新潟万代'=>'T・ジョイ新潟万代' ,'T・ジョイ長岡'=>'T・ジョイ長岡' ,'新宿バルト9'=>'新宿バルト9', 'T・ジョイSEIBU大泉'=>'T・ジョイSEIBU大泉', 'T・ジョイPRINCE品川'=>'T・ジョイPRINCE品川',
         // ]);
 
-        $form->date('start_day', __('掲載開始日'))->format('YYYY-MM-DD')->placeholder('掲載開始日')->setWidth(2, 2);
-        $form->text('start_time', __('掲載開始時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);
-        $form->date('end_day', __('掲載終了日'))->format('YYYY-MM-DD')->placeholder('掲載終了日')->setWidth(2, 2);
-        $form->text('end_time', __('掲載終了時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);
+        // $form->date('start_day', __('掲載開始日'))->format('YYYY-MM-DD')->placeholder('掲載開始日')->setWidth(2, 2);
+        // $form->text('start_time', __('掲載開始時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);
+        // $form->date('end_day', __('掲載終了日'))->format('YYYY-MM-DD')->placeholder('掲載終了日')->setWidth(2, 2);
+        // $form->text('end_time', __('掲載終了時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);
 
         $form->textarea('news_contents', __('お知らせ内容'))->rows(10)->placeholder('お知らせ内容を入力');
 

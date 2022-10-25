@@ -22,7 +22,7 @@
         <div class="box-footer">
             <div class="row">
                 <div class="col-md-{{ $layout->columns()->first()->width() }}">
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
                     <div class="col-md-8">
                         <div class="btn-group pull-left">
                             <a href="{!! $action !!}" class="btn btn-default btn-sm"><i

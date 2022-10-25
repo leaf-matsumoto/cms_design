@@ -1,5 +1,5 @@
 <div style="font-size:18px;border:none;">
-    <table style="margin: 0 auto;">
+    <table style="margin: 0 auto;font-size:14px;">
         <tr style="height:35px;">
             <td>最終更新ユーザー名</td>
             <td>&nbsp;：&nbsp;</td>
@@ -14,7 +14,7 @@
 </div>
 
 <div style="text-align:center;margin-top:20px;margin-bottom:30px;">
-    {!! QrCode::size(250)->generate('1234567') !!}
+    {!! QrCode::size(240)->generate('1234567') !!}
 </div>
 
 <div style="text-align:center;margin-bottom:20px;" class="print">

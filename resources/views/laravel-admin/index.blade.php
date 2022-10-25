@@ -7,7 +7,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ Admin::title() }} @if($header) | {{ $header }}@endif</title>
     <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
 
     @if(!is_null($favicon = Admin::favicon()))
     <link rel="shortcut icon" href="{{$favicon}}">
@@ -84,7 +86,10 @@
             width: 100%;
         }
 
-        .col-md-8 {
+        .
+        
+        
+        {
             width: 100%;
             margin-left:5%;
         }
@@ -209,7 +214,7 @@
 
     .fields-group-02 {
         /* margin: 0; */
-        margin-left: 17%!important;
+        margin-left: 20%!important;
         padding-left:0!important;
     }
 
@@ -293,6 +298,27 @@
         margin-top:15px;
     }
 
+
+    </style>
+
+@endif
+
+
+<!-- モバイルお知らせ管理 -->
+@if(\Request::is('admin/new-contents/create') || \Request::is('admin/purchase-papers/create') || \Request::is('admin/mails/create'))
+
+    <style>
+        .col-sm-1 {
+            width: 3%;
+        }
+
+        .col-sm-2 {
+            width: 8%;
+        }
+
+        .col-sm-3 {
+            width: 13%;
+        }
 
     </style>
 

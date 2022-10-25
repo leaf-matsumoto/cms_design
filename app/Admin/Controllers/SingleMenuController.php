@@ -36,10 +36,7 @@ class SingleMenuController extends AdminController
         $grid->column('menu_price', '商品単価')->sortable();
         $grid->column('self', 'セルフレジ')->sortable();
         $grid->column('mobile', 'モバイルオーダー')->sortable();
-        $grid->column('status', 'ステータス')->icon([
-            0 => 'exclamation-circle',
-            1 => '',
-        ], $default = '')->color('#ff0000')->sortable();
+        $grid->column('status', 'ステータス')->color('#ff0000')->sortable();
 
         // アクション（操作）一括非表示　※最終非表示
         $grid->disableActions();
@@ -86,16 +83,13 @@ class SingleMenuController extends AdminController
 
             $filter->column(1/4, function ($filter) {
                 $filter->equal('theater_name','モバイルオーダー')->select(['0' => 'value00','0' => 'value00']);
-                // $filter->like('menu_name', 'キーワード')->placeholder('商品コードまたは商品名を入力');
             });
 
             $filter->column(1/4, function ($filter) {
-                // $filter->equal('theater_name','セルフレジ')->select(['0' => 'value00','0' => 'value00']);
                 $filter->equal('theater_name','商品分類')->select(['0' => 'value00','0' => 'value00']);
             });
 
             $filter->column(1/4, function ($filter) {
-                // $filter->equal('theater_name','モバイルオーダー')->select(['0' => 'value00','0' => 'value00']);
                 $filter->like('menu_name', 'キーワード')->placeholder('商品コードまたは商品名を入力');
             });
         

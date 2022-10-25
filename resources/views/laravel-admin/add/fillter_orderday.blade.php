@@ -55,7 +55,7 @@
                 <div class="box-body">
                     <div class="fields-group">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label"> 決済状況</label>
+                            <label class="col-sm-2 control-label"> 決済ステータス</label>
                             <div class="col-sm-8">
                             <select class="form-control theater_name select2-hidden-accessible" name="theater_name" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                 <option></option>
@@ -63,7 +63,7 @@
                             </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-4p-container"><span class="select2-selection__rendered" id="select2-theater_name-4p-container"><span class="select2-selection__placeholder">選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>    </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label"> 注文状況</label>
+                            <label class="col-sm-2 control-label"> 注文ステータス</label>
                             <div class="col-sm-8">
                                 <select class="form-control theater_name select2-hidden-accessible" name="theater_name" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                     <option></option>
@@ -93,10 +93,10 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label"> 商品名</label>
                             <div class="col-sm-8">
-                                <div class="input-group">
-                                    <div class="input-group-addon">
+                                <div class="">
+                                    <!-- <div class="input-group-addon">
                                         <i class="fa fa-pencil"></i>
-                                    </div>
+                                    </div> -->
                                     <input type="text" class="form-control menu_name" placeholder="商品名を入力してください" name="menu_name" value="">
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
         <div class="box-footer" style="margin-top:15px;">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
                     <div class="col-md-8">
                         <div class="btn-group pull-left">
                             <a href="http://localhost/admin/order-mgts" class="btn btn-default btn-sm"><i class="fa fa-undo"></i>&nbsp;&nbsp;クリア</a>

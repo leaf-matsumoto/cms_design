@@ -15,9 +15,9 @@
         </ul>
     </div>
     @endif
-        <div class="input-group-addon">
+        <!-- <div class="input-group-addon">
             <i class="fa fa-{{ $icon }}"></i>
-        </div>
+        </div> -->
 
     <input type="{{ $type }}" class="form-control {{ $id }}" placeholder="{{$placeholder}}" name="{{$name}}" value="{{ request($name, $value) }}">
 </div>

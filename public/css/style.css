@@ -70,10 +70,10 @@ tr {
     /* ヘッダー */
     thead.allergy-title th {
         background:#696969;
-        font-weight: bold;
+        /* font-weight: bold; */
         color:#fff;
         text-align: center;
-        padding: 10px 35px;
+        padding: 5px 35px;
         width: 100%
     }
 
@@ -248,6 +248,7 @@ form label {
 
 .form-group {
     margin-left: 5%!important;
+    font-size: 12px;
     /* margin-bottom: 30px!important; */
 }
 
@@ -259,10 +260,16 @@ form label {
 }
 
 
+.col-md-3 {
+    padding-left:0;
+}
+
 
 .col-md-8 {
     padding-right:0;
+    padding-left:0;
     margin-bottom:20px;
+    width: 58%;
 }
 
 
@@ -473,6 +480,7 @@ textarea {
 
   body {
     font-size: 12px;
+    font-family: "メイリオ"!important;
   }
 
   form label.down {
@@ -482,3 +490,41 @@ textarea {
  {
     border: 3px green solid;
 }
+
+
+
+/* オーダー用紙管理 */
+.checkbox-inline{
+    margin-right:20px;
+}
+
+.icheckbox_minimal-blue:last-child{
+    margin-right:10px;
+}
+
+
+
+
+.red-plus{
+    font-weight: ;
+    color:#fff;
+    font-size:13px;
+    background-color: #c51d1d;
+    padding:10px;
+    margin-top: -15px;
+    border-radius: 5px;
+}
+
+
+
+.sub-msg {
+    margin-top: 7px;
+    color:red;
+    font-size:11px;
+}
+
+.red {
+    color:red;
+}
+
+

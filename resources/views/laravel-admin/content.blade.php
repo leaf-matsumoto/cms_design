@@ -24,7 +24,7 @@
             アレルギー表管理                            
         @endif
         @if(\Request::is('admin/new-contents/create'))
-            案内文言管理                           
+            モバイルお知らせ管理                           
         @endif
         @if(\Request::is('admin/purchase-papers/create'))
             オーダー用紙管理                           

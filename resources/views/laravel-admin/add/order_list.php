@@ -8,11 +8,28 @@
                         <div class="fields-group">
 
                         <!-- 基本情報 -->
-                        <div class="form-group col-sm-10" style="background-color:#696969;color:#fff;font-weight:bold;padding:10px 10px;"><i class="fa fa-chevron-up"></i>&nbsp;&nbsp;基本情報</div>
+                        <!-- 大項目 -->
+                        <div class="form-group label-all">
+                            <i class="fa fa-chevron-up"></i>&nbsp;&nbsp;基本情報
+                        </div>
+
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">オーダーID</label>
+                                <label class="col-sm-3 control-label">注文劇場</label>
+                                <div class="input-group col-sm-8">
+                                <div class="box box-solid box-default no-margin box-show">
+                                    <div class="box-body">
+                                        梅田ブルク7&nbsp;
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-5">
+                                <label class="col-sm-3 control-label">オーダーID</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -23,7 +40,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">会員ID</label>
+                                <label class="col-sm-3 control-label">会員ID</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -32,11 +49,12 @@
                                 </div>
                                 </div>
                             </div>
+                            
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">レシートNo</label>
+                                <label class="col-sm-3 control-label">レシートNo</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -47,7 +65,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">呼出し番号</label>
+                                <label class="col-sm-3 control-label">呼出番号</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -59,12 +77,15 @@
                         </div>
 
 
-                        <!-- 注文状況 -->
-                        <div class="form-group col-sm-10" style="background-color:#696969;color:#fff;font-weight:bold;padding:10px 10px;margin-top:30px;"><i class="fa fa-chevron-up"></i>&nbsp;&nbsp;注文状況</div>
+                        <!-- 注文ステータス -->
+                        <!-- 大項目 -->
+                        <div class="form-group label-all">
+                            <i class="fa fa-chevron-up"></i>&nbsp;&nbsp;注文ステータス
+                        </div>
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">注文ステータス</label>
+                                <label class="col-sm-3 control-label">注文ステータス</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -75,7 +96,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">販売区分</label>
+                                <label class="col-sm-3 control-label">販売区分</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -88,67 +109,82 @@
 
 
 
-                        <!-- 注文状況 -->
-                        <div class="form-group col-sm-10" style="background-color:#696969;color:#fff;font-weight:bold;padding:10px 10px;margin-top:30px;"><i class="fa fa-chevron-up"></i>&nbsp;&nbsp;注文内容</div>
+                        <!-- 注文ス内容 -->
+                        <!-- 大項目 -->
+                        <div class="form-group label-all">
+                            <i class="fa fa-chevron-up"></i>&nbsp;&nbsp;注文内容
+                        </div>
 
                         <div class="form-group">
-                            <div class="col-sm-11">
-                    
-                                <table style="width:90%;">
+                            <div class="col-sm-11 table-zone">
+            
+                                <table>
                                     <tbody>
                                         <tr style="background-color:#3c8dbc2a;">
-                                            <th style="width:10%;padding:5px 10px;">商品コード</th>
-                                            <th style="width:20%;">商品名</th>
-                                            <th style="width:10%;padding:5px 0;">(セット内)<br>商品コード</th>
-                                            <th style="width:20%;">(セット内)<br>商品名</th>
-                                            <th style="width:20%;">オプション</th>
-                                            <th style="width:5%;">数量</th>
-                                            <th style="width:5%;">金額</th>
+                                            <th style="padding:5px 25px;">商品コード</th>
+                                            <th style="padding:5px 25px;">商品名</th>
+                                            <th style="padding:5px 25px;">(セット内)<br>商品コード</th>
+                                            <th style="padding:5px 25px;">(セット内)<br>商品名</th>                                            
+                                            <th style="padding:5px 25px;">セット内追加オプション   </th>
+                                            <th style="padding:5px 25px;">追加金額</th>
+                                            <th style="padding:5px 25px;">オプション</th>
+                                            <th style="padding:5px 25px;">数量</th>
+                                            <th style="padding:5px 25px;">金額</th>
                                         </tr>
                                         <tr>
-                                            <td style="padding:5px 10px;">A200000100</td>
-                                            <td>ポップコーンセット塩</td>
-                                            <td>A100000110</td>
-                                            <td style="padding:10px 0;line-height: 25px;">ポップコーン塩R<br>ペプシR</td>
-                                            <td>-</td>
-                                            <td>1</td>
-                                            <td>800</td>
+                                            <td style="padding:5px 25px;">A250000100</td>
+                                            <td style="padding:5px 25px;">ポップコーンセット塩</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">A100000110<br>A000000110</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">ポップコーン塩R<br>ペプシR</td>
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;">1</td>
+                                            <td style="padding:5px 25px;">800</td>
                                         </tr>
                                         <tr>
-                                            <td style="padding:5px 10px;">A220000900</td>
-                                            <td>ポテトセット</td>
-                                            <td style="padding:10px 0;line-height: 25px;">A120000110<br>A000000120</td>
-                                            <td style="padding:10px 0;line-height: 25px;">ポテト<br>ペプシL</td>
-                                            <td style="padding:10px 0;line-height: 25px;">-<br>ドリンクサイズアップ/氷なし</td>
-                                            <td>1</td>
-                                            <td>800</td>
+                                            <td style="padding:5px 25px;">A225000900</td>
+                                            <td style="padding:5px 25px;">ポテトセット</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">A125000110<br>A000000125</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">ポテト<br>ペプシL</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br>ドリンクサイズアップ</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br>+50</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br>氷なし</td>
+                                            <td style="padding:5px 25px;">1</td>
+                                            <td style="padding:5px 25px;">800</td>
                                         </tr>
                                         <tr>
-                                            <td style="padding:5px 10px;">A200000700</td>
-                                            <td>ペアセットキャラメルR</td>
-                                            <td style="padding:10px 0;line-height: 25px;">A100000210<br>A000002800<br>A390025000</td>
-                                            <td style="padding:10px 0;line-height: 25px;">ポップコーンキャラメルR<br>ホットコーヒー<br>アイスカフェラテ</td>
-                                            <td style="padding:10px 0;line-height: 25px;">-<br>-<br>カフェ変更</td>
-                                            <td>1</td>
-                                            <td>800</td>
+                                            <td style="padding:5px 25px;">A250000700</td>
+                                            <td style="padding:5px 25px;">ペアセットキャラメルR</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">A100000210<br>A000002800<br>A390025000</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">ポップコーンキャラメルR<br>ホットコーヒー<br>アイスカフェラテ</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br>-<br>カフェ変更</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;">1</td>
+                                            <td style="padding:5px 25px;">800</td>
                                         </tr>
                                         <tr>
-                                            <td style="padding:5px 10px;">A120000110</td>
-                                            <td>ポテト</td>
-                                            <td>-</td>
-                                            <td style="padding:10px 0;line-height: 25px;">-</td>
-                                            <td>-</td>
-                                            <td>1</td>
-                                            <td>300</td>               
+                                            <td style="padding:5px 25px;">A125000110</td>
+                                            <td style="padding:5px 25px;">ポテト</td>
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-</td>
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;">1</td>
+                                            <td style="padding:5px 25px;">300</td>               
                                         </tr>
                                         <tr>
-                                            <td style="padding:5px 10px;">A120000110</td>
-                                            <td>ポテトセット50円引き</td>
-                                            <td>-</td>
-                                            <td style="padding:10px 0;line-height: 25px;">-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-50</td>               
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;">ポテトセット50円引き</td>
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-</td>
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;line-height: 30px;">-<br></td>
+                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;">-50</td>               
                                         </tr>
                                     </tbody>
                                 </table>
@@ -159,12 +195,15 @@
 
 
 
-                        <!-- 決済状況 -->
-                        <div class="form-group col-sm-10" style="background-color:#696969;color:#fff;font-weight:bold;padding:10px 10px;margin-top:30px;"><i class="fa fa-chevron-up"></i>&nbsp;&nbsp;決済状況</div>
+                        <!-- 決済ステータス -->
+                        <!-- 大項目 -->
+                        <div class="form-group label-all">
+                            <i class="fa fa-chevron-up"></i>&nbsp;&nbsp;決済ステータス
+                        </div>
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">決済ステータス</label>
+                                <label class="col-sm-3 control-label">決済ステータス</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -177,7 +216,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">決済金額</label>
+                                <label class="col-sm-3 control-label">決済金額</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -188,7 +227,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">決済種別</label>
+                                <label class="col-sm-3 control-label">決済種別</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -202,11 +241,14 @@
 
 
                         <!-- 取引日時 -->
-                        <div class="form-group col-sm-10" style="background-color:#696969;color:#fff;font-weight:bold;padding:10px 10px;margin-top:30px;"><i class="fa fa-chevron-up"></i>&nbsp;&nbsp;取引日時</div>
+                        <!-- 大項目 -->
+                        <div class="form-group label-all">
+                            <i class="fa fa-chevron-up"></i>&nbsp;&nbsp;取引日時
+                        </div>
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">仮オーダー日時</label>
+                                <label class="col-sm-3 control-label">仮オーダー日時</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -217,7 +259,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">本オーダー日時</label>
+                                <label class="col-sm-3 control-label">本オーダー日時</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -230,7 +272,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">準備開始時間</label>
+                                <label class="col-sm-3 control-label">準備開始日時</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -241,7 +283,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">呼出日時</label>
+                                <label class="col-sm-3 control-label">呼出日時</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -254,7 +296,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">完了日時</label>
+                                <label class="col-sm-3 control-label">完了日時</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -265,7 +307,7 @@
                             </div>
 
                             <div class="col-sm-5">
-                                <label class="col-sm-2 control-label">廃棄日時</label>
+                                <label class="col-sm-3 control-label">廃棄日時</label>
                                 <div class="input-group col-sm-8">
                                 <div class="box box-solid box-default no-margin box-show">
                                     <div class="box-body">
@@ -275,17 +317,91 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+<style>
+    .form-group {
+        margin-bottom:25px;
+    }
+
+    th {
+        color:#fff;
+        background-color:#4682b4;
+    }
+
+    /* テーブル色変更 */
+    table td {
+        background: #eee;
+    }
+    
+    table tr:nth-child(odd) td {
+        background: #fff;
+    }
+
+
+    .label-all{
+        background-color:#696969;
+        color:#fff;
+        font-weight:bold;
+        padding:10px 10px;
+        margin-top:50px;
+        width:90%;
+    }
+
+    /* 項目名 */
+    label.col-sm-3 {
+        font-weight:normal;
+        width: 26%;
+    }
+
+    div.col-sm-8 {
+        width: 70%;
+    }
+
+    div.col-sm-5 {
+        width: 30%;
+    }
+
+
+    .table-zone {
+        height:370px;
+        width:80%;
+        overflow-y:scroll;
+    }
+
+
+    table {
+        width:100%;
+    }
+
+    /* レスポンシブ */
+    @media screen and (max-width: 1300px) {
+    /* 1300px以下に適用されるCSS（タブレット用） */
+
+        label.col-sm-3 {
+            width: 30%;
+        }
+
+        div.col-sm-8 {
+            width: 60%;
+        }
+
+        div.col-sm-5 {
+            width: 49%;
+        }
+
+        .table-zone {
+        width:95%;
+    }
+
+    }
+
+
+
+</style>

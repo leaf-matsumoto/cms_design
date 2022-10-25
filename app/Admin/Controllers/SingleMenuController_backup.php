@@ -146,7 +146,7 @@ class SingleMenuController extends AdminController
         $form = new Form(new SingleMenu());
         
         $form->text('theater_name', '劇場名')->icon('fa-video-camera')->disable()->value('梅田ブルク7');
-        $form->text('menu_type', '劇場運用反映コード')->icon('fa-video-camera')->setWidth(2, 2)->disable()->value('A100000000');
+        $form->text('menu_type', 'セット内追加オプション')->icon('fa-video-camera')->setWidth(2, 2)->disable()->value('A100000000');
         $form->text('shouhinbunrui', 'グループ運用カテゴリー')->disable()->value('1')->icon('fa fa-coffee')->setWidth(2, 2);
         $form->text('menu_code', '商品コード')->icon('fa fa-barcode')->setWidth(2, 2)->disable()->value('A000000100');
         $form->text('receipt_menu_name', '商品レシート名')->disable()->value('ペプシ K')->icon('fa fa-coffee');

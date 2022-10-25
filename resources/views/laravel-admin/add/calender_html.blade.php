@@ -37,7 +37,8 @@
             <td>15<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
             <td class="today">16<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
             <td style="background-color:#ffffe0;">17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-            <td>18<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+            <td style="background-color:#fa8072;color:#fff">18<div style="color:#111;text-align:center;auto;margin:5px auto;height:25px;color:#fff;line-height:20px;">仮登録<br>10:00 - 24:30</div></td>
+            <!-- <td>18<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td> -->
             <td class="sat">19<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
         </tr>
         <tr>

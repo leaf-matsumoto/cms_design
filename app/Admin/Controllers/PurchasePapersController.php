@@ -66,6 +66,8 @@ class PurchasePapersController extends AdminController
         // $form->text('theater_name', __('Theater name'));
         // $form->text('order_info', __('Order info'));
 
+        // $form->checkbox('column', '販売エリア')->options([1 => '8階', 2 => '9階']);
+
         $form->textarea('order_info', __('注意書き'))->rows(10);
 
         $form->tools(function (Form\Tools $tools) {

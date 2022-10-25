@@ -34,6 +34,7 @@ class PickupController extends AdminController
         $grid->column('menu_price', '価格');
         $grid->column('self', 'セルフレジ');
         $grid->column('mobile', 'モバイルオーダー');
+        $grid->column('', 'エリアセット');
         // 削除ボタン
         $grid->column('削除')->default('<button type="button" class="btn btn-danger btn-xs" style="font-weight:bold;padding:1px 7px;">×</button>');
 
