@@ -325,12 +325,42 @@
 @endif
 
 <style>
-    th.column-status{
+    /* th.column-status{
         color:#111!important;
-    }
+    } */
 
     .column-status{
         text-align:center;
     }
 
 </style>
+
+
+
+<!-- モバイルお知らせ管理 -->
+@if(\Request::is('admin') || \Request::is('admin/purchase-papers/create'))
+
+<style>
+    /* テーブル色変更 */
+    th {
+        color: #fff!important;
+        background-color: #4682b4;
+    }
+
+    table td {
+        background: #fff;
+    }
+
+    table tr:nth-child(odd) td {
+        background: #fff;
+    }
+
+    table {
+        border:1px solid #dcdcdc;
+    }
+
+    a.fa {
+       color:#fff!important; 
+    }
+</style>
+@endif

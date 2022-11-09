@@ -5,8 +5,8 @@
         <!-- 各ページのタイトルを表示 -->
         <h1>
         @if(\Request::is('admin/masters/create') || \Request::is('admin/master2s/create') || \Request::is('admin/master3s/create'))
-            <!-- 商品マスター同期 -->
-            コンセクーポン同期
+            商品マスター同期
+            <!-- コンセクーポン同期 -->
         @endif
         @if(\Request::is('admin/single-menus'))
             単品商品管理                            
@@ -24,7 +24,8 @@
             アレルギー表管理                            
         @endif
         @if(\Request::is('admin/new-contents/create'))
-            モバイルお知らせ管理                           
+            (TOP)案内文言管理管理
+            <!-- (アクセス時)案内文言管理管理 -->
         @endif
         @if(\Request::is('admin/purchase-papers/create'))
             オーダー用紙管理                           

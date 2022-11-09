@@ -32,10 +32,7 @@ class CouponController extends AdminController
         $grid->column('coupon_line', '閾値')->sortable(); 
         $grid->column('mobile', '商品登録')->sortable();  
         
-        $grid->column('status', 'ステータス')->icon([
-            0 => 'exclamation-circle',
-            1 => '',
-        ], $default = '')->color('#ff0000')->sortable(); ;
+        $grid->column('status', 'ステータス')->color('#ff0000')->sortable(); ;
 
 
         //　すべてのアクションを非表示
@@ -103,10 +100,10 @@ class CouponController extends AdminController
     {
         $form = new Form(new Coupon());
 
-        $form->setWidth(8, 2)->text('K_coupon_id', 'クーポンID')->disable();
-        $form->text('coupon_code', 'クーポン名')->disable(); 
-        $form->text('coupon_discount', '割引金額')->disable(); 
-        $form->text('coupon_line', '閾値')->placeholder('金額を整数で入力'); 
+        // $form->setWidth(11, 1)->text('K_coupon_id', 'クーポンID')->disable();
+        // $form->text('coupon_code', 'クーポン名')->disable(); 
+        // $form->text('coupon_discount', '割引金額')->disable(); 
+        // $form->text('coupon_line', '閾値')->placeholder('金額を整数で入力'); 
         // $form->text('status', 'フラグ'); 
 
         $form->tools(function (Form\Tools $tools) {
@@ -125,6 +122,10 @@ class CouponController extends AdminController
             $footer->disableEditingCheck();
             //  作成を続行するを非表示
             $footer->disableCreatingCheck();
+            // disable reset btn
+            $footer->disableReset();
+            // disable submit btn
+            $footer->disableSubmit();
         });
 
 

@@ -28,38 +28,58 @@
         @else
             <div class="fields-group">
 
-                <!-- コンセ完了メール管理/モバイルお知らせ -->
-                @if(\Request::is('admin/mails/create') || \Request::is('admin/new-contents/create'))
-                        <div class="col-md-12"  style="border-bottom: 1px solid #d2d6de;padding-top:30px;padding-bottom:50px;margin-bottom:50px;">
-                            <div class="form-group  ">
-                                <label for="theater_name" class="col-sm-2  control-label">劇場選択</label>
-                                <div class="col-sm-8">
-                                    <input type="hidden" name="theater_name">
-                                    <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
-                                    <option value=""></option>
-                                        <option value="T・ジョイ新潟万代">T・ジョイ新潟万代</option>
-                                        <option value="T・ジョイ長岡">T・ジョイ長岡</option>
-                                        <option value="新宿バルト9">新宿バルト9</option>
-                                        <option value="T・ジョイSEIBU大泉">T・ジョイSEIBU大泉</option>
-                                        <option value="T・ジョイPRINCE品川">T・ジョイPRINCE品川</option>
-                                    </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9u-container"><span class="select2-selection__rendered" id="select2-theater_name-9u-container"><span class="select2-selection__placeholder">劇場選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>        
-                                </div>
+                <!-- コンセ完了メール管理 -->
+                @if(\Request::is('admin/mails/create'))
+                    <div class="col-md-12"  style="border-bottom: 1px solid #d2d6de;padding-top:30px;padding-bottom:50px;margin-bottom:50px;">
+                        <div class="form-group  ">
+                            <label for="theater_name" class="col-sm-2  control-label">劇場選択</label>
+                            <div class="col-sm-8" style="width:400px">
+                                <input type="hidden" name="theater_name">
+                                <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
+                                <option value=""></option>
+                                    <option value="T・ジョイ新潟万代">T・ジョイ新潟万代</option>
+                                    <option value="T・ジョイ長岡">T・ジョイ長岡</option>
+                                    <option value="新宿バルト9">新宿バルト9</option>
+                                    <option value="T・ジョイSEIBU大泉">T・ジョイSEIBU大泉</option>
+                                    <option value="T・ジョイPRINCE品川">T・ジョイPRINCE品川</option>
+                                </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9u-container"><span class="select2-selection__rendered" id="select2-theater_name-9u-container"><span class="select2-selection__placeholder">劇場選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>        
                             </div>
                         </div>
+                    </div>
+                @endif
+
+                <!-- モバイルお知らせ -->
+                @if(\Request::is('admin/new-contents/create'))
+                    <div class="col-md-12"  style="border-bottom: 1px solid #d2d6de;padding-top:30px;padding-bottom:50px;margin-bottom:50px;">
+                        <div class="form-group ">
+                            <label for="theater_name" class="col-sm-2  control-label">劇場選択</label>
+                            <div class="col-sm-8" style="width:400px;">
+                                <input type="hidden" name="theater_name">
+                                <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
+                                <option value=""></option>
+                                    <option value="T・ジョイ新潟万代">T・ジョイ新潟万代</option>
+                                    <option value="T・ジョイ長岡">T・ジョイ長岡</option>
+                                    <option value="新宿バルト9">新宿バルト9</option>
+                                    <option value="T・ジョイSEIBU大泉">T・ジョイSEIBU大泉</option>
+                                    <option value="T・ジョイPRINCE品川">T・ジョイPRINCE品川</option>
+                                </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9u-container"><span class="select2-selection__rendered" id="select2-theater_name-9u-container"><span class="select2-selection__placeholder">劇場選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>        
+                            </div>
+                        </div>
+                    </div>
+
                 @endif
 
                 <!-- メンテナンスQR -->
                 @if(\Request::is('admin/qrcodes/create'))
                     <div class="col-md-12"  style="border-bottom: 1px solid #d2d6de;padding-top:30px;padding-bottom:50px;margin-bottom:50px;">
                         
-                        <div class="col-sm-3"></div>
+                        <div class="col-sm-4"></div>
                     
-                        <div class="form-grop col-sm-6" style="padding:0;">
-                            <label for="theater_name" class="col control-label" style="font-weight:normal;">劇場選択</label>
-                            <div class="w-100"></div>
-                            <div class="col">
+                        <div class="form-group ">
+                            <label for="theater_name" class="col-sm-2  control-label" style="width:100px;">劇場選択</label>
+                            <div class="col-sm-8" style="width:400px;">
                                 <input type="hidden" name="theater_name">
-                                <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
+                                <select class="form-control theater_name select2-hidden-accessible" style=";" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
                                 <option value=""></option>
                                     <option value="T・ジョイ新潟万代">T・ジョイ新潟万代</option>
                                     <option value="T・ジョイ長岡">T・ジョイ長岡</option>
@@ -75,47 +95,56 @@
                 <!-- モバイルお知らせ管理 -->
                 @if(\Request::is('admin/new-contents/create'))
                     <div class="col-md-12"  style="margin-bottom:20px;">
-                
+
+
                         <div class="form-group">
-                            <label for="kaisibi" class="col-sm-2 down">掲載期間</label>
+                            <label for="column" class="col-sm-2  control-label">表示設定</label>
+                            <div class="col-sm-8" id="column">
+                                    <span class="icheck">
+                                        <label class="checkbox-inline">
+                                            <input type="radio" name="mobile" value="" style="margin-left:5px;margin-right:4px;transform: scale(1.2);" checked="">表示する
+                                            <input type="radio" name="mobile" value="" style="margin-left:20px;margin-right:4px;transform: scale(1.2);">表示しない
+                                        </label>
+                                    </span>
+                                <input type="hidden" name="column[]">
+                            </div>
+                        </div>
+        
 
-                            <div class="col-sm-3">
+
+                        <!-- 開始日時 -->
+                        <div class="form-group">
+                            <label for="kaisibi" class="col-sm-2 down">開始日時</label>
+
+                            <div class="col-sm-3" style="width:400px;">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
-                                    <input required="1" style="width:100%;" type="date" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="開始日">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="date" class="form-control" id="column_start" placeholder="開始日" name="column[start]" autocomplete="off">
+                                    <span class="input-group-addon" style="border-left: 0; border-right: 0;">-</span>
+                                    <input type="text" class="form-control" id="column_end" placeholder="開始時間（半角4桁）" name="column[end]" autocomplete="off" style="width:150px;">
                                 </div>
                             </div>
-
-                            <div class="col-sm-1" style="text-align:center;margin-top:8px;">~</div>
-                            
-                            <div class="col-sm-3">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
-                                    <input required="1" style="width:100%;" type="date" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="終了日">
-                                </div>
-                            </div>
-
                         </div>
 
+                        <!-- 終了日時 -->
                         <div class="form-group">
-                            <label for="kaisibi" class="col-sm-2 down">掲載時間帯</label>
+                            <label for="kaisibi" class="col-sm-2 down">終了日時</label>
 
-                            <div class="col-sm-3">
-                                <div class="">
-                                    <input required="1" style="width:100%;" type="time" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="開始日">
+                            <div class="col-sm-3" style="width:400px;">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="date" class="form-control" id="column_start" placeholder="開始日" name="column[start]" autocomplete="off">
+                                    <span class="input-group-addon" style="border-left: 0; border-right: 0;">-</span>
+                                    <input type="text" class="form-control" id="column_end" placeholder="終了時間（半角4桁）" name="column[end]" autocomplete="off" style="width:150px;">
                                 </div>
                             </div>
-
-                            <div class="col-sm-1" style="text-align:center;margin-top:8px;">~</div>
-                            
-                            <div class="col-sm-3">
-                                <div class="">
-                                    <input required="1" style="width:100%;" type="time" id="kaisibi" name="kaisibi" value="" class="form-control kaisibi" placeholder="終了日">
-                                </div>
-                            </div>
-
                         </div>
                     </div>
+
                 @endif
 
 
@@ -124,7 +153,7 @@
                     <div class="col-md-12"  style="margin-bottom:10px;padding-top:30px;">
                         <div class="form-group  ">
                             <label for="theater_name" class="col-sm-2  control-label">劇場選択</label>
-                            <div class="col-sm-8">
+                            <div class="col-sm-6">
                                 <input type="hidden" name="theater_name">
                                 <select class="form-control theater_name select2-hidden-accessible" style="width: 100%;" name="theater_name" data-value="" tabindex="-1" aria-hidden="true">
                                 <option value=""></option>
@@ -219,6 +248,13 @@
                         @if(\Request::is('admin/mobiles/create'))
                             @include('admin::add.calender_html')
                         @endif
+
+                        <!-- コンセ完了メール -->
+                        @if(\Request::is('admin/mails/create'))
+                            @include('admin::add.mail')
+                        @endif
+
+                        
 
                         </div>
 

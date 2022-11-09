@@ -47,11 +47,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </form>
@@ -70,21 +65,21 @@
         <thead class="allergy-title">
             <tr>
                 <th></th>
-                <th>商品名</th>
-                <th>卵</th>
-                <th>乳</th>
-                <th>小麦</th>
-                <th>えび</th>
-                <th>かに</th>
-                <th>落花生</th>
-                <th>そば</th>
-                <th></th>
+                <th class="">商品名</th>
+                <th class="select">卵</th>
+                <th class="select">乳</th>
+                <th class="select">小麦</th>
+                <th class="select">えび</th>
+                <th class="select">かに</th>
+                <th class="select">落花生</th>
+                <th class="select">そば</th>
+                <th class="delete"></th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                <th>チュリトス チョコミント</th>
+                <td class="left">チュリトス チョコミント</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
@@ -96,7 +91,7 @@
             </tr>
             <tr>
                 <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                <th>ひとくち大学いも</th>
+                <td class="left">ひとくち大学いも</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
@@ -108,7 +103,7 @@
             </tr>
             <tr>
                 <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                <th>チュリトス　ストロベリー</th>
+                <td class="left">チュリトス　ストロベリー</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
@@ -120,7 +115,7 @@
             </tr>
             <tr>                   
                 <td class="column-mobile"><button type="button" class="btn btn-primary btn-xs change-num">〓</button></td>
-                <th>ポップコーン　キャラメル</th>
+                <td class="left">ポップコーン　キャラメル</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
                 <td>{{Form::select('yaer', ['●' => '●', '△' => '△', '-' => '-'], 'current', ['placeholder' => '', 'class' => 'form-control'])}}</td>
@@ -160,11 +155,26 @@
                     <div>▲：製造工程で調理器具または揚げ物などを共有している</div>
                     <div>&nbsp;&nbsp;-&nbsp;：原材料に使用していない</div>
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
 
 
+<style>
+    td.left {
+        text-align: left!important;
+    }
+
+    table {
+        width: 1100px;
+    }
+
+    th.select {
+        width: 10px!important;
+    }
+
+    th.delete {
+        width: 10px!important;
+    }
+</style>

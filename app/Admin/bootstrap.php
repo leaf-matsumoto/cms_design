@@ -18,7 +18,9 @@
  *
  */
 
-Encore\Admin\Form::forget(['map', 'editor']);
+// エディタ機能追加
+// Encore\Admin\Form::forget(['map', 'editor']);
+Encore\Admin\Form::extend('editor', Encore\Admin\Form\Field\Editor::class);
 
 //View編集のため追記
 app('view')->prependNamespace('admin',resource_path('views/laravel-admin'));

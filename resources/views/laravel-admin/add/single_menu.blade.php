@@ -175,7 +175,7 @@
 
                 <div class="form-group">
                     <!-- <label for="shouhinnjunbibasho" class="col-sm-2">グループ運用カテゴリ</label> -->
-                    <label for="shouhinnjunbibasho" class="col-sm-2  down">グループカテゴリ</label>
+                    <label for="shouhinnjunbibasho" class="col-sm-2  down">グループカテゴリ<span class="red">&nbsp;＊</span></label>
                     <div class="col-sm-3">
                         <input type="hidden" name="shouhinnjunbibasho">
                         <select class="form-control shouhinnjunbibasho" style="width: 100%;" name="shouhinnjunbibasho" data-value="" tabindex="-1" aria-hidden="true">
@@ -186,6 +186,18 @@
                             <option value="3">C</option>
                         </select>
                     </div>
+                    <div class="sub-msg">
+                        <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+
+                <div class="form-group  1">
+                    <label for="aruko-ru" class="col-sm-2">グループのデフォルト</label>
+                    <div class="col-sm-8" id="aruko-ru">
+                        <input class="" type="checkbox" name="" value="" style="transform: scale(1.3);margin-left:5px">
+                        <span class="sub-msg">&nbsp;&nbsp;&nbsp;&nbsp;同じグループ内で複数チェックされている場合は、商品コードの一番若いものをデフォルトとする</span>
+                    </div>
+                    <div class="class"></div>
                 </div>
 
             <!-- 大項目 -->

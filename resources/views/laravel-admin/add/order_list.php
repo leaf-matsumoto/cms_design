@@ -129,7 +129,7 @@
                                             <th style="padding:5px 25px;">追加金額</th>
                                             <th style="padding:5px 25px;">オプション</th>
                                             <th style="padding:5px 25px;">数量</th>
-                                            <th style="padding:5px 25px;">金額</th>
+                                            <th style="padding:5px 25px;text-align:center;">金額</th>
                                         </tr>
                                         <tr>
                                             <td style="padding:5px 25px;">A250000100</td>
@@ -139,8 +139,8 @@
                                             <td style="padding:5px 25px;">-</td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
-                                            <td style="padding:5px 25px;">1</td>
-                                            <td style="padding:5px 25px;">800</td>
+                                            <td style="padding:5px 25px;text-align:right;">1</td>
+                                            <td style="padding:5px 25px;text-align:left;text-align:right;">800</td>
                                         </tr>
                                         <tr>
                                             <td style="padding:5px 25px;">A225000900</td>
@@ -150,8 +150,8 @@
                                             <td style="padding:5px 25px;line-height: 30px;">-<br>ドリンクサイズアップ</td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br>+50</td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br>氷なし</td>
-                                            <td style="padding:5px 25px;">1</td>
-                                            <td style="padding:5px 25px;">800</td>
+                                            <td style="padding:5px 25px;text-align:right;">1</td>
+                                            <td style="padding:5px 25px;text-align:right;">800</td>
                                         </tr>
                                         <tr>
                                             <td style="padding:5px 25px;">A250000700</td>
@@ -161,8 +161,8 @@
                                             <td style="padding:5px 25px;line-height: 30px;">-<br>-<br>カフェ変更</td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
-                                            <td style="padding:5px 25px;">1</td>
-                                            <td style="padding:5px 25px;">800</td>
+                                            <td style="padding:5px 25px;text-align:right;">1</td>
+                                            <td style="padding:5px 25px;text-align:right;">800</td>
                                         </tr>
                                         <tr>
                                             <td style="padding:5px 25px;">A125000110</td>
@@ -172,11 +172,24 @@
                                             <td style="padding:5px 25px;">-</td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
-                                            <td style="padding:5px 25px;">1</td>
-                                            <td style="padding:5px 25px;">300</td>               
+                                            <td style="padding:5px 25px;text-align:right;">1</td>
+                                            <td style="padding:5px 25px;text-align:right;">300</td>               
                                         </tr>
+                                   
+                                        <tr style="background-color:#3c8dbc2a;">
+                                            <th style="padding:5px 25px;width:100px;">支払いオプションコード</th>
+                                            <th style="padding:5px 25px;">クーポン名</th>
+                                            <th style="padding:5px 25px;"></th>
+                                            <th style="padding:5px 25px;"></th>                                            
+                                            <th style="padding:5px 25px;"></th>
+                                            <th style="padding:5px 25px;"></th>
+                                            <th style="padding:5px 25px;"></th>
+                                            <th style="padding:5px 25px;"></th>
+                                            <th style="padding:5px 25px;">割引金額</th>
+                                        </tr>
+
                                         <tr>
-                                            <td style="padding:5px 25px;">-</td>
+                                            <td style="padding:5px 25px;">C123456789</td>
                                             <td style="padding:5px 25px;">ポテトセット50円引き</td>
                                             <td style="padding:5px 25px;">-</td>
                                             <td style="padding:5px 25px;line-height: 30px;">-</td>
@@ -184,10 +197,12 @@
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
                                             <td style="padding:5px 25px;line-height: 30px;">-<br></td>
                                             <td style="padding:5px 25px;">-</td>
-                                            <td style="padding:5px 25px;">-50</td>               
+                                            <td style="padding:5px 25px;text-align:right;">-50</td>               
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
                             </div>
                         </div>
 
@@ -370,7 +385,7 @@
 
 
     .table-zone {
-        height:370px;
+        /* height:370px; */
         width:80%;
         overflow-y:scroll;
     }
@@ -378,6 +393,10 @@
 
     table {
         width:100%;
+    }
+
+    table,th, td {
+        border:1px solid #dcdcdc;
     }
 
     /* レスポンシブ */

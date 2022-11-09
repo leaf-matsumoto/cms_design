@@ -330,8 +330,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="form-group">
                     <label for="kaisibi" class="col-sm-1 down">購入制限</label>
                     <label for="kaisibi" class="col-sm-1 down">
@@ -364,18 +362,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-            
-
-
-
         </div>
     </div>
 </div>

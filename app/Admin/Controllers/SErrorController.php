@@ -34,7 +34,7 @@ class SErrorController extends AdminController
 
 
 
-        $grid->column('id', 'ID')->sortable();
+        // $grid->column('id', 'ID')->sortable();
         $grid->column('err_code', 'エラーコード')->sortable();
         $grid->column('err_title', 'タイトル')->sortable();
         $grid->column('err_contents', 'エラー内容')->sortable();
@@ -76,7 +76,7 @@ class SErrorController extends AdminController
     {
         $show = new Show(SError::findOrFail($id));
 
-        $show->field('id', __('Id'));
+        // $show->field('id', __('Id'));
         $show->field('err_code', __('Err code'));
         $show->field('err_contents', __('Err contents'));
         $show->field('err_handling', __('Err handling'));

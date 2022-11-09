@@ -22,11 +22,11 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control" id="column_start" placeholder="注文日" name="column[start]" value="" autocomplete="off">
+                                    <input type="text" class="form-control" id="column_start" placeholder="開始日" name="column[start]" value="" autocomplete="off">
 
                                     <span class="input-group-addon" style="border-left: 0; border-right: 0;">-</span>
 
-                                    <input type="text" class="form-control" id="column_end" placeholder="注文日" name="column[end]" value="" autocomplete="off">
+                                    <input type="text" class="form-control" id="column_end" placeholder="終了日" name="column[end]" value="" autocomplete="off">
                                 </div>
                             </div>
                         </div>
@@ -38,11 +38,11 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control" id="column_start" placeholder="注文時間" name="column[start]" value="" autocomplete="off">
+                                    <input type="text" class="form-control" id="column_start" placeholder="開始時間" name="column[start]" value="" autocomplete="off">
 
                                     <span class="input-group-addon" style="border-left: 0; border-right: 0;">-</span>
 
-                                    <input type="text" class="form-control" id="column_end" placeholder="注文時間" name="column[end]" value="" autocomplete="off">
+                                    <input type="text" class="form-control" id="column_end" placeholder="終了時間" name="column[end]" value="" autocomplete="off">
                                 </div>
                             </div>
                         </div>
@@ -68,14 +68,14 @@
                                 <select class="form-control theater_name select2-hidden-accessible" name="theater_name" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                     <option></option>
                                     <option value="0">value00</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-0r-container"><span class="select2-selection__rendered" id="select2-theater_name-0r-container"><span class="select2-selection__placeholder">選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>    
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-0r-container"><span class="select2-selection__rendered" id="select2-theater_name-0r-container"><span class="select2-selection__placeholder">選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                             </div>
                         </div>
-                
+
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4">
                 <div class="box-body">
                     <div class="fields-group">
@@ -86,10 +86,10 @@
                                 <select class="form-control theater_name select2-hidden-accessible" name="theater_name" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                     <option></option>
                                     <option value="0">value00</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9n-container"><span class="select2-selection__rendered" id="select2-theater_name-9n-container"><span class="select2-selection__placeholder">選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>    
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-theater_name-9n-container"><span class="select2-selection__rendered" id="select2-theater_name-9n-container"><span class="select2-selection__placeholder">選択</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                             </div>
                         </div>
-                       
+
                         <div class="form-group">
                             <label class="col-sm-2 control-label"> 商品名</label>
                             <div class="col-sm-8">
@@ -104,7 +104,7 @@
 
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
 
         <!-- 検索/キャンセル ボタン -->

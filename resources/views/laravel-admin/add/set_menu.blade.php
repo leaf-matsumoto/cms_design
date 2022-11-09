@@ -98,145 +98,315 @@
                         <div class="col-sm-8 table-zone">
                             <table>
                                 <tr style="background-color:#3c8dbc2a;">
-                                    <th style="padding:5px 10px;text-align:center;">連番</th>
-                                    <th style="padding:5px 10px;text-align:center;">商品コード</th>
-                                    <th style="padding:5px 10px;">商品名</th>
-                                    <th style="padding:5px 10px;">⇔</th>
-                                    <th style="padding:5px 10px;text-align:center;">セット内追加オプション</th>
+                                    <th rowspan="2" style="padding:5px 10px;text-align:center;">連番</th>
+                                    <th rowspan="2" style="padding:5px 10px;text-align:center;">商品コード</th>
+                                    <th rowspan="2" style="padding:5px 10px;text-align:center;">商品名</th>
+                                    <th rowspan="2" style="padding:5px 10px;text-align:center;">➡</th>
+                                    <th colspan="3" style="padding:5px 10px;text-align:center;">セット内追加オプション</th>
+                                    <!-- <th style="padding:5px 10px;">セット内追加オプション</th> -->
+                                    <!-- <th rowspan="2" style="padding:5px 10px;"></th> -->
                                 </tr>
+                                <tr style="background-color:#3c8dbc2a;">
+                                    <!-- <th style="padding:5px 10px;text-align:center;">連番</th> -->
+                                    <!-- <th style="padding:5px 10px;">商品コード</th> -->
+                                    <!-- <th style="padding:5px 10px;">商品名</th> -->
+                                    <!-- <th style="padding:5px 10px;"></th> -->
+                                    <th style="padding:5px 10px;text-align:center;">商品コード</th>
+                                    <th colspan="3" style="padding:5px 10px;text-align:center;">商品名</th>
+                                    <!-- <th style="padding:5px 10px;">セット内追加オプション</th> -->
+                                    <!-- <th style="padding:5px 10px;"></th> -->
+                                </tr>
+
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">1</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000110</td>
+                                    <td style="padding:5px 10px;">A000000110</td>
                                     <td style="padding:5px 10px;">ペプシ R</td>
                                     <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">2</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000310</td>
-                                    <td style="padding:5px 10px;">メロンソーダ R</td>
+                                    <td style="padding:5px 10px;">A000000210</td>
+                                    <td style="padding:5px 10px;">ペプシゼロ R</td>
                                     <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">3</td>
-                                    <td style="padding:5px 10px;text-align:center;">A290000100</td>
-                                    <td >ドリンクサイズアップ</td>
-                                    <td style="padding:5px 10px;">▶</td>
-                                    <td style="padding:5px 10px;text-align:center;">A999999999</td>
+                                    <td style="padding:5px 10px;">A000000310</td>
+                                    <td style="padding:5px 10px;">メロンソーダ R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">4</td>
-                                    <td style="padding:5px 10px;text-align:center;">A290000110</td>
-                                    <td >ドリンクサイズアップ</td>
-                                    <td style="padding:5px 10px;">▶</td>
-                                    <td style="padding:5px 10px;text-align:center;">A888888888</td>
+                                    <td style="padding:5px 10px;">A000000410</td>
+                                    <td style="padding:5px 10px;">セブンアップ R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">5</td>
-                                    <td style="padding:5px 10px;text-align:center;">A290000200</td>
-                                    <td >カフェ変更</td>
-                                    <td style="padding:5px 10px;">▶</td>
-                                    <td style="padding:5px 10px;text-align:center;">A777777777</td>
+                                    <td style="padding:5px 10px;">A000000510</td>
+                                    <td style="padding:5px 10px;">なっちゃんオレンジ R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">6</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000120</td>
-                                    <td style="padding:5px 10px;">ペプシ L</td>
-                                    <td style="padding:5px 10px;">◀</td>
-                                    <td style="padding:5px 10px;text-align:center;">A999999999</td>
+                                    <td style="padding:5px 10px;">A000000910</td>
+                                    <td style="padding:5px 10px;">ホワイトウォーター R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">7</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000320</td>
-                                    <td style="padding:5px 10px;padding:5px 10px;">メロンソーダ L</td>
-                                    <td style="padding:5px 10px;">◀</td>
-                                    <td style="padding:5px 10px;text-align:center;">A888888888</td>
+                                    <td style="padding:5px 10px;">A000000610</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">ウーロン茶 R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                                 <tr>
                                     <td style="padding:5px 10px;text-align:center;padding:5px 0;">8</td>
-                                    <td style="padding:5px 10px;text-align:center;">A020000100</td>
-                                    <td style="padding:5px 10px;padding:5px 10px;">ホットカフェラテ</td>
-                                    <td style="padding:5px 10px;">◀</td>
-                                    <td style="padding:5px 10px;text-align:center;">A777777777</td>
+                                    <td style="padding:5px 10px;">A000000710</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">リプトンアイスティー R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">9</td>
+                                    <td style="padding:5px 10px;">A000000810</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">緑茶 R</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">10</td>
+                                    <td style="padding:5px 10px;">A000002800</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">ホットコーヒー</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">11</td>
+                                    <td style="padding:5px 10px;">A000002810</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">アイスコーヒー</td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">12</td>
+                                    <td style="padding:5px 10px;">A290000110</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">ドリンクサイズアップ</td>
+                                    <td style="padding:5px 10px;text-align:center;">➡</td>
+                                    <td style="padding:5px 10px;">A290000100</td>
+                                    <td style="padding:5px 10px;">ドリンクサイズアップ</td>
+                                    <td style="padding:5px 10px;text-align:center;"><i class="fa fa-chevron-down"></i></td>
+                                </tr>
+                                <!-- <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">12</td>
+                                    <td style="padding:5px 10px;">A290000110</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">ドリンクサイズアップ</td>
+                                    <td style="padding:5px 10px;">➡</td>
+                                    <td style="padding:5px 10px;">A290000100</td>
+                                    <td style="padding:5px 10px;">ドリンクサイズアップ</td>
+                                    <td style="padding:5px 10px;"><i class="fa fa-chevron-up"></i></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000120</td>
+                                    <td style="padding:5px 10px;">ペルシ L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000220</td>
+                                    <td style="padding:5px 10px;">ペプシゼロ L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000320</td>
+                                    <td style="padding:5px 10px;">メロンソーダ L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000420</td>
+                                    <td style="padding:5px 10px;">セブンアップ L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000520</td>
+                                    <td style="padding:5px 10px;">なっちゃんオレンジ L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000920</td>
+                                    <td style="padding:5px 10px;">ホワイトウォーター L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000620</td>
+                                    <td style="padding:5px 10px;">ウーロン茶 L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000720</td>
+                                    <td style="padding:5px 10px;">リプトンアイスティー L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000000820</td>
+                                    <td style="padding:5px 10px;">緑茶 L</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr> -->
+
+
+
+
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">13</td>
+                                    <td style="padding:5px 10px;">A290000210</td>
+                                    <td style="padding:5px 10px;padding:5px 10px;">カフェ変更</td>
+                                    <td style="padding:5px 10px;text-align:center;">➡</td>
+                                    <td style="padding:5px 10px;">A290000200</td>
+                                    <td style="padding:5px 10px;">カフェ変更</td>
+                                    <td style="padding:5px 10px;text-align:center;"><i class="fa fa-chevron-up"></i></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000002900</td>
+                                    <td style="padding:5px 10px;">ホットミルクココア</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000002910</td>
+                                    <td style="padding:5px 10px;">アイスミルクココア</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A020000100</td>
+                                    <td style="padding:5px 10px;">ホットカフェラテ</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A020000100</td>
+                                    <td style="padding:5px 10px;">アイスカフェラテ</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A020000500</td>
+                                    <td style="padding:5px 10px;">ホット抹茶ラテ</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A020000500</td>
+                                    <td style="padding:5px 10px;">抹茶アイスラテ</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A020000200</td>
+                                    <td style="padding:5px 10px;">ホットキャラメルラテ</td>
+                                    <td style="padding:5px 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px 10px;padding:5px 0;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;"></td>
+                                    <td style="padding:5px 10px;">A000003000</td>
+                                    <td style="padding:5px 10px;">ホットロイヤルミルクティー</td>
+                                    <td style="padding:5px 10px;"></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
 
-                <!-- 中項目 -->
-                <!-- <div class="form-group" style="border-bottom:1px solid #d3d3d3;padding:10px;padding-top:30px;">
-                    子商品選択項目②
-                </div>
+
                     
-                    <div class="form-group">
-                        <label for="setunnyoukategori" class="col-sm-2 down" style="font-size:12px;font-weight:100;">子商品カテゴリー</label>
-                        <div class="col-sm-3">    
-                            <input type="hidden" name="setunnyoukategori">
-                            <select class="form-control setunnyoukategori" style="width: 100%;" name="setunnyoukategori" data-value="" tabindex="-1" aria-hidden="true">
-                                <option value="" disabled selected style="display:none;"></option>
-                                <option value="0" selected=""></option>
-                                <option value="1">ドリンク</option>
-                                <option value="2">サイズ変更/商品変更</option>
-                                <option value="3">フレーバー</option>
-                                <option value="4">オプション</option>
-                                <option value="5">特典</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="margin-bottom:20px">
-                        <label for="c_menu_name" class="col-sm-2">子商品情報</label>
-                        <div class="col-sm-8 table-zone;">
-                        <table>
-                                <tr style="background-color:#3c8dbc2a;">
-                                    <th style="padding:5px 10px;text-align:center;">連番</th>
-                                    <th style="padding:5px 10px;text-align:center;">商品コード</th>
-                                    <th style="padding:5px 10px;">商品名</th>
-                                    <th style="padding:5px 10px;">⇔</th>
-                                    <th style="padding:5px 10px;text-align:center;">セット内追加オプション</th>
-                                </tr>
-                                <tr>
-                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">1</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000110</td>
-                                    <td style="padding:5px 10px;">ペプシ R</td>
-                                    <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
-
-                                </tr>
-                                <tr>
-                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">2</td>
-                                    <td style="padding:5px 10px;text-align:center;">A290000100</td>
-                                    <td >ドリンクサイズアップ</td>
-                                    <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
-
-                                </tr>
-                                <tr>
-                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">4</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000100</td>
-                                    <td style="padding:5px 10px;padding:5px 10px;">ペプシ K</td>
-                                    <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">5</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000120</td>
-                                    <td style="padding:5px 10px;">ペプシ L</td>
-                                    <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:5px 10px;text-align:center;padding:5px 0;">6</td>
-                                    <td style="padding:5px 10px;text-align:center;">A000000310</td>
-                                    <td style="padding:5px 10px;">メロンソーダ R</td>
-                                    <td style="padding:5px 10px;"></td>
-                                    <td style="padding:5px 10px;text-align:center;"></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div> -->
-
             <!-- 大項目 -->
             <div class="form-group label-all">
                 <i class="fa fa-chevron-up"></i>&nbsp;&nbsp;商品基本設定
@@ -322,7 +492,7 @@
                     </div>
                 </div>
                 <!-- エラー表示 -->
-                <!-- <div class="form-group">
+                <div class="form-group">
                     <label for="basic_menu_name" class="col-sm-2 down"></label>
                     <div class="col-sm-5">
                         <div class="red-plus">
@@ -330,7 +500,7 @@
                             &nbsp;&nbsp;商品表示名の入力内容に誤りがあります。
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
 
@@ -348,7 +518,7 @@
                     </div>
                 </div>
                 <!-- エラー表示 -->
-                <!-- <div class="form-group">
+                <div class="form-group">
                     <label for="basic_menu_name" class="col-sm-2 down"></label>
 
                     <div class="col-sm-5">
@@ -357,7 +527,7 @@
                             &nbsp;&nbsp;商品表示名は入力必須項目です。
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
             <!-- 大項目 -->
@@ -496,7 +666,7 @@
 
 
     .table-zone {
-        height:250px;
+        /* height:250px; */
         width:70%;
         overflow-y:scroll;
     }
@@ -504,6 +674,10 @@
 
     table {
         width:100%;
+    }
+
+    table,th, td {
+        border:1px solid #dcdcdc;
     }
 
 
@@ -543,3 +717,51 @@
 
 
 </style>
+
+
+
+
+ 	
+
+
+<script type="text/javascript"><!--
+function hideCell()
+{
+	document.getElementById("tbl403").style.visibility = "hidden";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script language="JavaScript">
+<!-- //javascript123
+ window.onload = putId;
+    function putId(){
+      // テーブルの行にID名を付ける
+     var Tbe = document.getElementById("tbl");
+      Tr = Tbe.getElementsByTagName("tr");
+       for(i=0; i<Tr.length; i++){
+        Tr[i].id='trID'+i;
+            }
+         }
+
+function hideRow(){
+  //セレクトメニューの　option value値(ID名)の取得
+ var List = document.getElementById("list");
+  index_nub = List.selectedIndex;
+   optVal=List.options[index_nub].value;
+    var Row = document.getElementById(optVal);
+     //行の表示、非表示
+     Row.style.display=(Row.style.display == 'none')?"":"none";
+   }
+// -->
+</script> -->

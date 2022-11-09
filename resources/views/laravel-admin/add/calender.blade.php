@@ -108,41 +108,6 @@
                     </div>
                 </div>
 
-                <!-- --------------------------- -->     
-
-<!-- 
-    <style>
-            h3 {
-                /* text-align:center; */
-            }
-
-            .container {
-                font-family: 'Noto Sans JP', sans-serif;
-                margin-top: 0px;
-            }
-            .calender a {
-                text-decoration: none;
-            }
-            .calender th {
-                height: 30px;
-                text-align: center;
-                background-color:#f5f5f5;
-            }
-            .calender td {
-                height: 100px;
-            }
-            .today {
-                background: #ffffe0 !important;
-            }
-            .calender th:nth-of-type(1),  .calender td:nth-of-type(1) {
-                color: red;
-            }
-            .calender th:nth-of-type(7), .calender td:nth-of-type(7) {
-                color: blue;
-            }
-    </style> -->
-
-
 <!-- アラート -->
 <script>
 $(function (){

@@ -36,12 +36,12 @@ class MErrorController extends AdminController
         // チェックボックス非表示
         $grid->option('show_row_selector' , false);
 
-        $grid->column('id', 'ID')->sortable();
+        // $grid->column('id', 'ID')->sortable();
         $grid->column('err_code', 'エラーコード')->sortable();
         $grid->column('err_title', 'タイトル')->sortable();
         $grid->column('err_contents', 'エラー内容')->sortable();
         $grid->column('err_handling', 'エラー対応')->sortable();
-        
+
         // すべてのアクションを非表示
         $grid->disableActions();
 
@@ -62,6 +62,28 @@ class MErrorController extends AdminController
         //     $filter->like('name', 'キーワード');
         // });
 
+
+        // CSV出力設定
+        $grid->export(function ($export) {
+
+            $export->filename('Filename.csv');
+
+            // 出力する必要のない項目を設定する
+            // $export->except(['err_code', 'err_title']);
+
+            // $export->only(['column3', 'column4' ...]);
+
+            // $export->originalValue(['column1', 'column2' ...]);
+
+            // $export->column('column_5', function ($value, $original) {
+            //     return $value;
+            // )};
+        });
+
+
+
+
+
         return $grid;
     }
 
@@ -75,7 +97,7 @@ class MErrorController extends AdminController
     {
         $show = new Show(MError::findOrFail($id));
 
-        $show->field('id', __('Id'));
+        // $show->field('id', __('Id'));
         $show->field('err_code', __('Err code'));
         $show->field('err_contents', __('Err contents'));
         $show->field('err_handling', __('Err handling'));

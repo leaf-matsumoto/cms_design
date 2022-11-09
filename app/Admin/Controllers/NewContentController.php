@@ -75,8 +75,15 @@ class NewContentController extends AdminController
         // $form->text('start_time', __('掲載開始時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);
         // $form->date('end_day', __('掲載終了日'))->format('YYYY-MM-DD')->placeholder('掲載終了日')->setWidth(2, 2);
         // $form->text('end_time', __('掲載終了時間'))->placeholder('半角4桁で入力')->setWidth(1, 2);
+        $form->editor;
 
-        $form->textarea('news_contents', __('お知らせ内容'))->rows(10)->placeholder('お知らせ内容を入力');
+        // エディタ機能なし
+        $form->textarea('news_contents', __('案内文言'))->rows(10)->placeholder('お知らせ内容を入力');
+
+        // エディタ機能あり
+        // $form->editor('detail', __('お知らせ内容'))->placeholder('お知らせ内容を入力');
+        
+
 
         $form->tools(function (Form\Tools $tools) {
             // 右上の表示ボタンを非表示

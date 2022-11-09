@@ -7,17 +7,20 @@
             <div class=""><span style="font-size:20px!important;">2022</span>&thinsp;年<span style="font-size:20px!important;">&thinsp;7</span>&thinsp;月<span style="font-size:20px!important;">&thinsp;13</span>&thinsp;日</div>
             <!-- <div class="col-md-6 js-close" style="text-align:right;color:red;font-weight:bold;cursor:pointer;">×</div> -->
         </div>
+        
         <div class="row" style="margin-bottom:10px;">
             <div class="col-md-5">販売開始時間</div>
-            <div class="col-md-6" style="width:10px">{{Form::text('text', null, ['class'=>'dialog','placeholder'=>'半角4桁'])}}</div>
+            <div class="col-md-6">
+                <input required="1" style="width:100%;" type="text" id="" name="" value="" class="fullwidth-halfwidth" placeholder="半角4桁" maxlength="4">
+            </div>
         </div>
+        
         <div class="row" style="margin-bottom:20px;">
             <div class="col-md-5">販売終了時間</div>
-            <div class="col-md-6">{{Form::text('text', null, ['class'=>'dialog','placeholder'=>'半角4桁'])}}</div>
+            <div class="col-md-6">
+                <input required="1" style="width:100%;" type="" id="" name="" value="" class="" placeholder="半角4桁" maxlength="4">
+            </div>
         </div>
-
-
-
 
         <div class="hidden_box">
             <label for="label1">入力例&nbsp;▽</label>
@@ -45,8 +48,6 @@
         <div class="row">
             <div class="col-md-12" style="font-size:11px;margin-top:10px;color:#ff6347;">※この画面は本登録画面ではありません。</div>
         </div>
-
-
 
         <div class="btn-group pull-right" style="margin-right:20px;margin-bottom:20px;margin-top:20px;margin-bottom:0;margin-right:0;">
             <button type="reset" class="btn btn-primary btn-submit">仮登録</button>
@@ -98,3 +99,26 @@
 }
 
 </style>
+
+<script>
+
+    (function($){
+    //半角を全角に置換
+        $('.halfwidth-fullwidth').change(function(){
+        var text = $(this).val();
+        var str = text.replace(/[A-Za-z0-9]/g, function(s) {
+            return String.fromCharCode(s.charCodeAt(0) + 65248);
+        });
+        $(this).val(str);
+        });
+    //全角を半角に置換
+        $('.fullwidth-halfwidth').change(function(){
+        var text = $(this).val();
+        var str = text.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
+            return String.fromCharCode(s.charCodeAt(0) - 65248);
+        });
+        $(this).val(str);
+        });
+    })(jQuery);
+
+</script>

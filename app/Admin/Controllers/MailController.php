@@ -66,8 +66,13 @@ class MailController extends AdminController
         // ]);
 
         // $form->textarea('header_mail', 'ヘッダー')->rows(5);
-        $form->textarea('main_mail', '差込文章')->rows(10)->placeholder('差込文章を入力');
+        // $form->textarea('main_mail', '差込文章①')->rows(7)->placeholder('差込文章を入力');
+        // $form->textarea('', '定型文')->rows(5)->value('横浜ブルク13&#13;&#10;事業者番号 ***_*****&#13;&#10;ここに定型文を入力する。')->disable();
+        // $form->textarea('main_mail', '差込文章②')->rows(7)->placeholder('差込文章を入力');
+        // $form->textarea('', '定型文')->rows(10)->value('POPセット塩&#13;&#10;ポップコーン塩R&#13;&#10;ペプシR&#13;&#10;ビアセット&#13;&#10;ポテチキ&#13;&#10;プレミアムモルツ&#13;&#10;')->disable();
         // $form->textarea('footer_mail', 'フッター')->rows(5);
+
+        // $form->editor('detail', __('詳細'));
 
         $form->tools(function (Form\Tools $tools) {
             // 右上の表示ボタンを非表示

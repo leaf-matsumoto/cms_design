@@ -29,33 +29,30 @@
 </head>
 <body class="hold-transition login-page" @if(config('admin.login_background_image'))style="background: url({{config('admin.login_background_image')}}) no-repeat;background-size: cover;"@endif>
 <div class="login-box">
-  <!-- <div class="login-logo" style="margin-bottom:10px;">
-    <a href="{{ admin_url('/') }}" style="font-size:25px;"><b>{{config('admin.name')}}</b></a>
-  </div> -->
+  <div class="login-logo">
+    <a href="{{ admin_url('/') }}"><b>{{config('admin.name')}}</b></a>
+  </div>
   <!-- /.login-logo -->
-  <div class="login-box-body" style="border-radius:5px;box;box-shadow: 0 0 8px #696969;">
-    <!-- <p class="login-box-msg">{{ trans('admin.login') }}</p> -->
-    <p class="login-box-msg" style="font-size:22px;padding-bottom:15px;"><b>コンセオーダーCMS</b></p>
+  <div class="login-box-body">
+    <p class="login-box-msg">{{ trans('admin.login') }}</p>
 
     <form action="{{ admin_url('auth/login') }}" method="post">
       <div class="form-group has-feedback {!! !$errors->has('username') ?: 'has-error' !!}">
 
         @if($errors->has('username'))
           @foreach($errors->get('username') as $message)
-            <!-- <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i>{{$message}}</label><br> -->
-            <label class="control-label" for="inputError" style="margin-bottom:10px;font-size:13px;"></i>※ ログインID、またはパスワードに誤りがあります。</label><br>
+            <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i>{{$message}}</label><br>
           @endforeach
         @endif
 
         <input type="text" class="form-control" placeholder="{{ trans('admin.username') }}" name="username" value="{{ old('username') }}">
-        <!-- メールアイコン -->
-        <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback {!! !$errors->has('password') ?: 'has-error' !!}">
 
         @if($errors->has('password'))
           @foreach($errors->get('password') as $message)
-            <!-- <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i>{{$message}}</label><br> -->
+            <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i>{{$message}}</label><br>
           @endforeach
         @endif
 
@@ -84,7 +81,6 @@
 
   </div>
   <!-- /.login-box-body -->
-  <p class="copyright" style="text-align:center;font-size:10px;margin-top:10px;">© 2022 T-JOY ALL RIGHTS RESERVED.</p>
 </div>
 <!-- /.login-box -->
 

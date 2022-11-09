@@ -43,21 +43,21 @@ class SingleMenuController extends AdminController
 
         // 新規登録ボタン非表示
         $grid->disableCreateButton();
-    
+
         // $grid->disableFilter();
-    
+
         // チェックボックスの非表示
         $grid->disableRowSelector();
-    
+
         // 行表示項目選択表示
         $grid->disableColumnSelector();
-    
+
         // フィルタ（検索）ボタン
         // $grid->disableTools();
-    
+
         // CSV出力
         $grid->disableExport();
-    
+
         // アクション（操作）個別非表示
         // $grid->actions(function (Grid\Displayers\Actions $actions) {
         //     $actions->disableView();
@@ -92,7 +92,7 @@ class SingleMenuController extends AdminController
             $filter->column(1/4, function ($filter) {
                 $filter->like('menu_name', 'キーワード')->placeholder('商品コードまたは商品名を入力');
             });
-        
+
         });
 
         return $grid;
@@ -138,7 +138,7 @@ class SingleMenuController extends AdminController
     protected function form()
     {
         $form = new Form(new SingleMenu());
-        
+
 
 
 

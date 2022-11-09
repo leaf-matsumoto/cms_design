@@ -3,7 +3,10 @@
     {{ csrf_field() }}
 
 
-    @if(\Request::is('admin/qrcodes/create') || \Request::is('admin/mobiles/create'))
+    @if(\Request::is('admin/qrcodes/create'))
+        <div class="col-md-4">
+        </div>
+    @elseif(\Request::is('admin/mobiles/create'))
         <div class="col-md-3">
         </div>
     @else
@@ -13,7 +16,7 @@
 
     @if(\Request::is('admin/qrcodes/create'))
         <!-- <div class="col-md-{{$width['field']}}"> -->
-        <div class="col-md-8" style="margin-bottom:20px;width:50%;">
+        <div class="col-md-8" style="margin-bottom:20px;width:550px;">
     @else
         <div class="col-md-8" style="margin-bottom:20px;">
     @endif

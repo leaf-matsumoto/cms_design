@@ -10,7 +10,7 @@
     </div> -->
 
     <div class="box-header with-border">
-        <div class="pull-left" style="margin-left:7%;>
+        <div class="pull-left" style="margin-left:7%;margin-top:20px;>
                 <div class="btn-group" style="margin-right: 5px" data-toggle="buttons">
             <label class="btn btn-sm btn-dropbox 62e888e05414c-filter-btn active" title="検索条件">
             <input type="checkbox"><i class="fa fa-chevron-up"></i><span class="hidden-xs">&nbsp;&nbsp;検索条件</span>
@@ -59,7 +59,7 @@
                     <div class="col-md-4">
                         <div class="col-md-2">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <div class="btn-group pull-left">
                                 <a href="http://localhost/admin/single-menus" class="btn btn-default btn-sm"><i class="fa fa-undo"></i>&nbsp;&nbsp;クリア</a>
                             </div>
@@ -77,7 +77,7 @@
 
 
 
-    <table class="table table-hover grid-table" id="grid-table62cb85ed4552e" style="width:1100px;margin-left:100px;">
+    <table class="table table-hover event_table grid-table" id="grid-table62cb85ed4552e" style="width:1100px;margin-left:100px;">
         <!-- カラム名 -->
         <thead>
             <tr>
@@ -167,6 +167,85 @@
                 <td class="column-mobile">販売可</td>
                 <td class="column-mobile">8階</td>
             </tr>
+
+
+
+
+            <tr data-key="5">
+                <td class="column-__row_selector__">
+                    <div class="icheckbox_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;">
+                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
+                </td>
+                <!-- <td class="column-id">5</td> -->
+                <td class="column-menu_code">A000000010</td>
+                <td class="column-menu_name">ペプシ R</td>
+                <td class="column-menu_price">370</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
+            </tr>
+            <tr data-key="5">
+                <td class="column-__row_selector__">
+                    <div class="icheckbox_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;">
+                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
+                </td>
+                <!-- <td class="column-id">5</td> -->
+                <td class="column-menu_code">A000000310</td>
+                <td class="column-menu_name">メロンソーダ R</td>
+                <td class="column-menu_price">370</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
+            </tr>
+            <tr data-key="5">
+                <td class="column-__row_selector__">
+                    <div class="icheckbox_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;">
+                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
+                </td>
+                <!-- <td class="column-id">5</td> -->
+                <td class="column-menu_code">A000000510</td>
+                <td class="column-menu_name">なっちゃんオレンジ R</td>
+                <td class="column-menu_price">370</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
+            </tr>
+            <tr data-key="5">
+                <td class="column-__row_selector__">
+                    <div class="icheckbox_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;">
+                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
+                </td>
+                <!-- <td class="column-id">5</td> -->
+                <td class="column-menu_code">A000000710</td>
+                <td class="column-menu_name">リプトンアイスティー R</td>
+                <td class="column-menu_price">370</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
+            </tr>
+            <tr data-key="5">
+                <td class="column-__row_selector__">
+                    <div class="icheckbox_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;">
+                        <input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
+                </td>
+                <!-- <td class="column-id">5</td> -->
+                <td class="column-menu_code">A000003000</td>
+                <td class="column-menu_name">ホットロイヤルミルクティー</td>
+                <td class="column-menu_price">370</td>
+                <td class="column-self">販売可</td>
+                <td class="column-mobile">販売可</td>
+                <td class="column-mobile">8階</td>
+            </tr>
+            
+
+
+
+
         </tbody>
     </table>
 
@@ -448,3 +527,7 @@
         
     </div>
 </div>
+
+
+
+<style>.event_table tr:hover td {	background-color: #d9efff;}</style>

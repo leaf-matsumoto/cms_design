@@ -35,9 +35,9 @@
             <td class="sun">13<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
             <td>14<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
             <td>15<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-            <td class="today">16<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-            <td style="background-color:#ffffe0;">17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
-            <td style="background-color:#fa8072;color:#fff">18<div style="color:#111;text-align:center;auto;margin:5px auto;height:25px;color:#fff;line-height:20px;">仮登録<br>10:00 - 24:30</div></td>
+            <td>16<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+            <td class="today">17<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td>
+            <td class="kari">18<div style="color:#111;text-align:center;auto;margin:5px auto;height:25px;color:#fff;line-height:20px;">仮登録<br>10:00 - 24:30</div></td>
             <!-- <td>18<div style="color:#111;text-align:center;margin:20px auto;">10:00 - 24:30</div></td> -->
             <td class="sat">19<div style="color:red;text-align:center;margin:20px auto;">未登録</div></td>
         </tr>
@@ -61,3 +61,30 @@
         </tr>
     </table>
 </div>
+
+
+<style>
+    table {
+        border:none;
+    }
+    td {
+        background-color:#fff!important;
+    }
+
+    .print {
+        text-align:center;
+        margin-bottom:0px;
+        border-bottom:1px solid #d2d6de;
+        padding-bottom:40px;
+    }
+
+    .today {
+        background-color:#ffffe0!important;
+    }
+
+    .kari {
+        background-color:#fa8072!important;
+        color:#fff
+    }
+
+</style>

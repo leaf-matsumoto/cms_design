@@ -1,3 +1,4 @@
+
 /* フォームリセットボタン */
 .reset-btn {
     padding-right:10px!important;
@@ -64,17 +65,19 @@ tr {
 
     .allergy {
         table-layout: fixed;
+        text-align: left;
     }
 
 
     /* ヘッダー */
     thead.allergy-title th {
-        background:#696969;
+        /* background:#696969; */
         /* font-weight: bold; */
-        color:#fff;
+        /* color:#fff; */
         text-align: center;
         padding: 5px 35px;
         width: 100%
+
     }
 
     thead.allergy-title th:first-child {
@@ -84,7 +87,7 @@ tr {
     /* ボディ項目・フッター項目 */
     .allergy tbody th
     {
-        background:#FFF;
+        /* background:#FFF; */
         padding: 10px;
     }
 
@@ -97,9 +100,9 @@ tr {
 
 
     /* 偶数行　１行ごとの色変えが不要なら削除 */
-    .allergy tr:nth-child(2n) th, 
-    .allergy tr:nth-child(2n) td {
-        background: #FBFBF6;
+    /* .allergy tr:nth-child(2n) th, 
+    .allergy tr:nth-child(2n) td { */
+        /* background: #FBFBF6; */
     }
 
     .allergy-add th {
@@ -118,10 +121,10 @@ tr {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70%;
-        height: 70%;
+        height: 90%;
         background-color: #ffffff;
         border-radius: 5px;
-        z-index: 11;
+        z-index: 9000;
         padding: 2rem;
         overflow-y: auto;
     /* overflow-y: scroll; */
@@ -138,7 +141,7 @@ tr {
         height: 80%;
         background-color: #ffffff;
         border-radius: 5px;
-        z-index: 12;
+        z-index: 9001;
         padding: 2rem;
         overflow-y: auto;
         /* overflow-y: scroll; */
@@ -161,13 +164,12 @@ tr {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
-        z-index: 10;
+        z-index: 8000;
     }
     
 
     .p-img {
         border: solid 1px #696969;
-        /* width: 100%; */
         ;height: 100%;
     }
 
@@ -510,7 +512,7 @@ textarea {
     color:#fff;
     font-size:13px;
     background-color: #c51d1d;
-    padding:10px;
+    padding:6px 15px;
     margin-top: -15px;
     border-radius: 5px;
 }
@@ -528,3 +530,34 @@ textarea {
 }
 
 
+
+
+
+
+    /* テーブル色変更 */
+    th {
+        color: #fff!important;
+        background-color: #4682b4;
+    }
+
+    table td {
+        background: #eee;
+    }
+
+    table tr:nth-child(odd) td {
+        background: #fff;
+    }
+
+    table {
+        border:1px solid #dcdcdc;
+    }
+
+    a.fa {
+       color:#fff!important; 
+    }
+
+
+    /* テキストエディタ */
+    .cke_top, .cke_bottom, .cke_toolbar {
+        background: #f5f5f5 !important;
+    }

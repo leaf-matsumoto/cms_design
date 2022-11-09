@@ -1,8 +1,8 @@
 <!-- 商品マスタ同期時 -->
-<!-- <div class="container">
+<div class="container">
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-7  offset-sm-3" style="padding:30px 0;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-5  offset-sm-3" style="padding:30px 0;">
             <label for="" class="col-sm-12">劇場選択</label>
             <div class="col-sm-12">
                 <input type="hidden" name="">
@@ -23,29 +23,29 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-7 offset-sm-3">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-5 offset-sm-3">
             <div class="" style="text-align:center;margin:50px 0 100px 0;">
                 <button type="submit" class="btn btn-lg btn-chain" style="">商品マスタ同期実行</button>
-                <div class="chain-result" style="font-size:20px;">同期成功：2022/07/07 11:50</div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-<!-- コンセクーポン同期 -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-7 offset-sm-3">
-            <div class="" style="text-align:center;margin:50px 0 100px 0;">
-                <button type="submit" class="btn btn-lg btn-chain" style="">コンセクーポン同期実行</button>
-                <div class="chain-result" style="font-size:20px;">同期成功：2022/07/07 11:50</div>
+                <div class="chain-result" style="font-size:16px;">同期成功：2022/07/07 11:50</div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- コンセクーポン同期 -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-5">
+            <div class="" style="text-align:center;margin:50px 0 100px 0;">
+                <button type="submit" class="btn btn-lg btn-chain" style="">コンセクーポン同期実行</button>
+                <div class="chain-result" style="font-size:16px;">同期成功：2022/07/07 11:50</div>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 
 
@@ -55,10 +55,10 @@
         color:#fff;
         background-color:#4682b4!important;
         width:100%;
-        height:90px;
+        height:80px;
         border: 6px groove #4682b4;
         font-weight:bold;
-        font-size:20px;
+        font-size:18px;
     }
 
     .btn-chain:hover {
